@@ -166,15 +166,15 @@
             // 
             saveFileDialog1.Filter = "Schedule files|*.sch|Text files|*.txt|All files|*.*";
             // 
-            // Form1
+            // main
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(800, 450);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "main";
+            Text = "Student class scheduler";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
