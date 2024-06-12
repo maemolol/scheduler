@@ -4,7 +4,6 @@ C:\Users\mark\source\repos\scheduler\scheduler\bin\Debug\netcoreapp3.1\scheduler
 C:\Users\mark\source\repos\scheduler\scheduler\bin\Debug\netcoreapp3.1\scheduler.runtimeconfig.dev.json
 C:\Users\mark\source\repos\scheduler\scheduler\bin\Debug\netcoreapp3.1\scheduler.dll
 C:\Users\mark\source\repos\scheduler\scheduler\bin\Debug\netcoreapp3.1\scheduler.pdb
-C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.Form1.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.csproj.GenerateResource.cache
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.AssemblyInfoInputs.cache
@@ -13,3 +12,7 @@ C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.dll
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.pdb
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.genruntimeconfig.cache
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.Properties.Resources.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.sourcelink.json
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.main.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\netcoreapp3.1\scheduler.Properties.addStudent.resources
