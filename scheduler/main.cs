@@ -1,11 +1,11 @@
-﻿using System;
+﻿using scheduler.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace scheduler
@@ -36,6 +36,18 @@ namespace scheduler
             {
 
             }
+        }
+
+        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addStudent addS = new addStudent();
+            addS.Show();
+        }
+
+        private void addTeacherToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addTeacher addT = new addTeacher();
+            addT.Show();
         }
     }
 }
