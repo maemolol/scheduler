@@ -55,5 +55,11 @@ namespace scheduler
             addGroup addG = new addGroup();
             addG.Show();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            about abW = new about();
+            abW.Show();
+        }
     }
 }
