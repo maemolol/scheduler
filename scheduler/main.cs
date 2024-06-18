@@ -49,5 +49,11 @@ namespace scheduler
             addTeacher addT = new addTeacher();
             addT.Show();
         }
+
+        private void addGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addGroup addG = new addGroup();
+            addG.Show();
+        }
     }
 }

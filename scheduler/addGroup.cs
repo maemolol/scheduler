@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace scheduler
 {
-    public partial class Form1 : Form
+    public partial class addGroup : Form
     {
-        public Form1()
+        public addGroup()
         {
             InitializeComponent();
         }

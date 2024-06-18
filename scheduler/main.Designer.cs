@@ -166,6 +166,7 @@
             this.addGroupToolStripMenuItem.Name = "addGroupToolStripMenuItem";
             this.addGroupToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.addGroupToolStripMenuItem.Text = "Add group";
+            this.addGroupToolStripMenuItem.Click += new System.EventHandler(this.addGroupToolStripMenuItem_Click);
             // 
             // addTeacherToolStripMenuItem
             // 
