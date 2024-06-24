@@ -15,5 +15,14 @@ namespace scheduler
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            schedulerDataSetTableAdapters.groupsTableAdapter grp =
+                new schedulerDataSetTableAdapters.groupsTableAdapter();
+
+            grp.Insert((int) studentComboBox.SelectedValue, groupClasses.Text, (int) groupClassrooms.SelectedValue);
+            this.Close();
+        }
     }
 }

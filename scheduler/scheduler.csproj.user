@@ -10,10 +10,13 @@
     <Compile Update="addGroup.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="addRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Properties\addStudent.cs">
+    <Compile Update="addStudent.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

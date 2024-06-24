@@ -23,6 +23,7 @@ namespace scheduler.Properties
                 new schedulerDataSetTableAdapters.studentsTableAdapter();
 
             stud.Insert((int) idNumericUpDown.Value, studentNameTextBox.Text, studentSurnameTextBox.Text, emailTextBox.Text, comboBox1.SelectedText);
+            this.Close();
         }
 
         

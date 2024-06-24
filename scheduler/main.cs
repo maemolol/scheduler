@@ -61,5 +61,35 @@ namespace scheduler
             about abW = new about();
             abW.Show();
         }
+
+        private void addClassroomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addRoom addR = new addRoom();
+            addR.Show();
+        }
+
+        private void addStudentLabel_Click(object sender, EventArgs e)
+        {
+            addStudent addS = new addStudent();
+            addS.Show();
+        }
+
+        private void addTeacherLabel_Click(object sender, EventArgs e)
+        {
+            addTeacher addT = new addTeacher();
+            addT.Show();
+        }
+
+        private void addGroupLabel_Click(object sender, EventArgs e)
+        {
+            addGroup addG = new addGroup();
+            addG.Show();
+        }
+
+        private void addClassroomLabel_Click(object sender, EventArgs e)
+        {
+            addRoom addR = new addRoom();
+            addR.Show();
+        }
     }
 }

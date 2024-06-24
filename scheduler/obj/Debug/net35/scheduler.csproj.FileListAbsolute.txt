@@ -1,6 +1,5 @@
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.csproj.AssemblyReference.cache
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.main.resources
-C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.Properties.addStudent.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.Properties.Resources.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.csproj.GenerateResource.cache
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,3 +33,5 @@ C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.pdb
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addTeacher.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addGroup.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.about.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addRoom.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addStudent.resources

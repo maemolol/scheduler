@@ -22,6 +22,7 @@ namespace scheduler
                 new schedulerDataSetTableAdapters.teachersTableAdapter();
 
             teach.Insert((int) teacherIdNumericUpDown.Value, teacherNameTextBox.Text, teacherSurnameTextBox.Text, teacherEmailTextBox.Text);
+            this.Close();
         }
     }
 }

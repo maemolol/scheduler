@@ -45,11 +45,24 @@
             this.addGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.fuctionsTab = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.addStudentLabel = new System.Windows.Forms.Label();
+            this.addTeacherLabel = new System.Windows.Forms.Label();
+            this.addGroupLabel = new System.Windows.Forms.Label();
+            this.addClassroomLabel = new System.Windows.Forms.Label();
+            this.propertiesTab = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.fuctionsTab.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -59,10 +72,11 @@
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(600, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(600, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -163,6 +177,7 @@
             this.addClassroomToolStripMenuItem.Name = "addClassroomToolStripMenuItem";
             this.addClassroomToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addClassroomToolStripMenuItem.Text = "Add classroom";
+            this.addClassroomToolStripMenuItem.Click += new System.EventHandler(this.addClassroomToolStripMenuItem_Click);
             // 
             // addGroupToolStripMenuItem
             // 
@@ -185,6 +200,21 @@
             this.addStudentToolStripMenuItem.Text = "Add student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 23);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.Filter = "Schedule files|*.sch|Text files|*.txt|All files|*.*";
@@ -193,26 +223,132 @@
             // 
             this.saveFileDialog1.Filter = "Schedule files|*.sch|Text files|*.txt|All files|*.*";
             // 
-            // helpToolStripMenuItem
+            // tableLayoutPanel1
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 26);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 283);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // aboutToolStripMenuItem
+            // tabControl1
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.tabControl1.Controls.Add(this.fuctionsTab);
+            this.tabControl1.Controls.Add(this.propertiesTab);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tableLayoutPanel1.SetRowSpan(this.tabControl1, 2);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(174, 277);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // fuctionsTab
+            // 
+            this.fuctionsTab.Controls.Add(this.tableLayoutPanel2);
+            this.fuctionsTab.Location = new System.Drawing.Point(4, 22);
+            this.fuctionsTab.Name = "fuctionsTab";
+            this.fuctionsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.fuctionsTab.Size = new System.Drawing.Size(166, 251);
+            this.fuctionsTab.TabIndex = 0;
+            this.fuctionsTab.Text = "Functions";
+            this.fuctionsTab.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.addStudentLabel, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.addTeacherLabel, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.addGroupLabel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.addClassroomLabel, 0, 3);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 245);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // addStudentLabel
+            // 
+            this.addStudentLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addStudentLabel.AutoSize = true;
+            this.addStudentLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addStudentLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStudentLabel.Location = new System.Drawing.Point(3, 1);
+            this.addStudentLabel.Name = "addStudentLabel";
+            this.addStudentLabel.Size = new System.Drawing.Size(84, 17);
+            this.addStudentLabel.TabIndex = 0;
+            this.addStudentLabel.Text = "Add student";
+            this.addStudentLabel.Click += new System.EventHandler(this.addStudentLabel_Click);
+            // 
+            // addTeacherLabel
+            // 
+            this.addTeacherLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addTeacherLabel.AutoSize = true;
+            this.addTeacherLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addTeacherLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTeacherLabel.Location = new System.Drawing.Point(3, 21);
+            this.addTeacherLabel.Name = "addTeacherLabel";
+            this.addTeacherLabel.Size = new System.Drawing.Size(82, 17);
+            this.addTeacherLabel.TabIndex = 1;
+            this.addTeacherLabel.Text = "Add teacher";
+            this.addTeacherLabel.Click += new System.EventHandler(this.addTeacherLabel_Click);
+            // 
+            // addGroupLabel
+            // 
+            this.addGroupLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addGroupLabel.AutoSize = true;
+            this.addGroupLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addGroupLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addGroupLabel.Location = new System.Drawing.Point(3, 41);
+            this.addGroupLabel.Name = "addGroupLabel";
+            this.addGroupLabel.Size = new System.Drawing.Size(74, 17);
+            this.addGroupLabel.TabIndex = 2;
+            this.addGroupLabel.Text = "Add group";
+            this.addGroupLabel.Click += new System.EventHandler(this.addGroupLabel_Click);
+            // 
+            // addClassroomLabel
+            // 
+            this.addClassroomLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addClassroomLabel.AutoSize = true;
+            this.addClassroomLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addClassroomLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addClassroomLabel.Location = new System.Drawing.Point(3, 61);
+            this.addClassroomLabel.Name = "addClassroomLabel";
+            this.addClassroomLabel.Size = new System.Drawing.Size(99, 17);
+            this.addClassroomLabel.TabIndex = 3;
+            this.addClassroomLabel.Text = "Add classroom";
+            this.addClassroomLabel.Click += new System.EventHandler(this.addClassroomLabel_Click);
+            // 
+            // propertiesTab
+            // 
+            this.propertiesTab.Location = new System.Drawing.Point(4, 22);
+            this.propertiesTab.Name = "propertiesTab";
+            this.propertiesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.propertiesTab.Size = new System.Drawing.Size(166, 251);
+            this.propertiesTab.TabIndex = 1;
+            this.propertiesTab.Text = "Properties";
+            this.propertiesTab.UseVisualStyleBackColor = true;
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 308);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -220,6 +356,11 @@
             this.Text = "Student class scheduler";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.fuctionsTab.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +389,14 @@
         private System.Windows.Forms.ToolStripMenuItem addStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage fuctionsTab;
+        private System.Windows.Forms.TabPage propertiesTab;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label addStudentLabel;
+        private System.Windows.Forms.Label addTeacherLabel;
+        private System.Windows.Forms.Label addGroupLabel;
+        private System.Windows.Forms.Label addClassroomLabel;
     }
 }
