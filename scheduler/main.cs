@@ -91,5 +91,11 @@ namespace scheduler
             addRoom addR = new addRoom();
             addR.Show();
         }
+
+        private void addClassToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addClass addC = new addClass();
+            addC.Show();
+        }
     }
 }
