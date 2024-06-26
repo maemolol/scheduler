@@ -57,6 +57,7 @@
             this.addTeacherLabel = new System.Windows.Forms.Label();
             this.addGroupLabel = new System.Windows.Forms.Label();
             this.addClassroomLabel = new System.Windows.Forms.Label();
+            this.addClassL = new System.Windows.Forms.Label();
             this.propertiesTab = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -76,7 +77,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(600, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(600, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,7 +90,7 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 23);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 26);
             this.fileToolStripMenuItem.Text = " File";
             // 
             // openToolStripMenuItem
@@ -137,67 +138,67 @@
             this.addTeacherToolStripMenuItem,
             this.addStudentToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(46, 23);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(203, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(173, 6);
             // 
             // addClassToolStripMenuItem
             // 
             this.addClassToolStripMenuItem.Name = "addClassToolStripMenuItem";
-            this.addClassToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.addClassToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addClassToolStripMenuItem.Text = "Add class";
             this.addClassToolStripMenuItem.Click += new System.EventHandler(this.addClassToolStripMenuItem_Click);
             // 
             // addClassroomToolStripMenuItem
             // 
             this.addClassroomToolStripMenuItem.Name = "addClassroomToolStripMenuItem";
-            this.addClassroomToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.addClassroomToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addClassroomToolStripMenuItem.Text = "Add classroom";
             this.addClassroomToolStripMenuItem.Click += new System.EventHandler(this.addClassroomToolStripMenuItem_Click);
             // 
             // addGroupToolStripMenuItem
             // 
             this.addGroupToolStripMenuItem.Name = "addGroupToolStripMenuItem";
-            this.addGroupToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.addGroupToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addGroupToolStripMenuItem.Text = "Add group";
             this.addGroupToolStripMenuItem.Click += new System.EventHandler(this.addGroupToolStripMenuItem_Click);
             // 
             // addTeacherToolStripMenuItem
             // 
             this.addTeacherToolStripMenuItem.Name = "addTeacherToolStripMenuItem";
-            this.addTeacherToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.addTeacherToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addTeacherToolStripMenuItem.Text = "Add teacher";
             this.addTeacherToolStripMenuItem.Click += new System.EventHandler(this.addTeacherToolStripMenuItem_Click);
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.addStudentToolStripMenuItem.Text = "Add student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
@@ -206,7 +207,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 23);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 26);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
@@ -231,12 +232,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 28);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 283);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 280);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tabControl1
@@ -248,7 +249,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tableLayoutPanel1.SetRowSpan(this.tabControl1, 2);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(174, 277);
+            this.tabControl1.Size = new System.Drawing.Size(174, 274);
             this.tabControl1.TabIndex = 0;
             // 
             // fuctionsTab
@@ -257,7 +258,7 @@
             this.fuctionsTab.Location = new System.Drawing.Point(4, 22);
             this.fuctionsTab.Name = "fuctionsTab";
             this.fuctionsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.fuctionsTab.Size = new System.Drawing.Size(166, 251);
+            this.fuctionsTab.Size = new System.Drawing.Size(166, 248);
             this.fuctionsTab.TabIndex = 0;
             this.fuctionsTab.Text = "Functions";
             this.fuctionsTab.UseVisualStyleBackColor = true;
@@ -270,16 +271,18 @@
             this.tableLayoutPanel2.Controls.Add(this.addTeacherLabel, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.addGroupLabel, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.addClassroomLabel, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.addClassL, 0, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 245);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 242);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // addStudentLabel
@@ -333,6 +336,18 @@
             this.addClassroomLabel.TabIndex = 3;
             this.addClassroomLabel.Text = "Add classroom";
             this.addClassroomLabel.Click += new System.EventHandler(this.addClassroomLabel_Click);
+            // 
+            // addClassL
+            // 
+            this.addClassL.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addClassL.AutoSize = true;
+            this.addClassL.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addClassL.Location = new System.Drawing.Point(3, 81);
+            this.addClassL.Name = "addClassL";
+            this.addClassL.Size = new System.Drawing.Size(66, 17);
+            this.addClassL.TabIndex = 4;
+            this.addClassL.Text = "Add class";
+            this.addClassL.Click += new System.EventHandler(this.label1_Click);
             // 
             // propertiesTab
             // 
@@ -399,5 +414,6 @@
         private System.Windows.Forms.Label addTeacherLabel;
         private System.Windows.Forms.Label addGroupLabel;
         private System.Windows.Forms.Label addClassroomLabel;
+        private System.Windows.Forms.Label addClassL;
     }
 }
