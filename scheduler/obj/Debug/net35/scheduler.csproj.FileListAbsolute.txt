@@ -35,3 +35,4 @@ C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addGrou
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.about.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addRoom.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addStudent.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addClass.resources

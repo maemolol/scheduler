@@ -34,6 +34,8 @@ namespace scheduler {
         
         private classesDataTable tableclasses;
         
+        private global::System.Data.DataRelation relationFK_classes_groups;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -290,6 +292,7 @@ namespace scheduler {
                     this.tableclasses.InitVars();
                 }
             }
+            this.relationFK_classes_groups = this.Relations["FK_classes_groups"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -311,6 +314,13 @@ namespace scheduler {
             this.tableclasses = new classesDataTable();
             base.Tables.Add(this.tableclasses);
             global::System.Data.ForeignKeyConstraint fkc;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_classes_groups", new global::System.Data.DataColumn[] {
+                        this.tableclasses.groupColumn}, new global::System.Data.DataColumn[] {
+                        this.tablegroups.groupsColumn});
+            this.tablegroups.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_classes_students", new global::System.Data.DataColumn[] {
                         this.tablestudents.student_idColumn,
                         this.tablestudents.group_nameColumn}, new global::System.Data.DataColumn[] {
@@ -327,6 +337,10 @@ namespace scheduler {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            this.relationFK_classes_groups = new global::System.Data.DataRelation("FK_classes_groups", new global::System.Data.DataColumn[] {
+                        this.tableclasses.groupColumn}, new global::System.Data.DataColumn[] {
+                        this.tablegroups.groupsColumn}, false);
+            this.Relations.Add(this.relationFK_classes_groups);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -546,13 +560,16 @@ namespace scheduler {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public groupsRow AddgroupsRow(int student_ids, string groups, int classrooms, string classes) {
+            public groupsRow AddgroupsRow(int student_ids, classesRow parentclassesRowByFK_classes_groups, int classrooms, string classes) {
                 groupsRow rowgroupsRow = ((groupsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         student_ids,
-                        groups,
+                        null,
                         classrooms,
                         classes};
+                if ((parentclassesRowByFK_classes_groups != null)) {
+                    columnValuesArray[1] = parentclassesRowByFK_classes_groups[1];
+                }
                 rowgroupsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowgroupsRow);
                 return rowgroupsRow;
@@ -1737,6 +1754,9 @@ namespace scheduler {
                 base.Columns.Add(this.columnclass_name);
                 this.columngroup = new global::System.Data.DataColumn("group", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngroup);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columngroup}, false));
+                this.columngroup.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1928,6 +1948,17 @@ namespace scheduler {
                 }
                 set {
                     this[this.tablegroups.classesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public classesRow classesRow {
+                get {
+                    return ((classesRow)(this.GetParentRow(this.Table.ParentRelations["FK_classes_groups"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_classes_groups"]);
                 }
             }
             
@@ -2196,6 +2227,17 @@ namespace scheduler {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetgroupNull() {
                 this[this.tableclasses.groupColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public groupsRow[] GetgroupsRows() {
+                if ((this.Table.ChildRelations["FK_classes_groups"] == null)) {
+                    return new groupsRow[0];
+                }
+                else {
+                    return ((groupsRow[])(base.GetChildRows(this.Table.ChildRelations["FK_classes_groups"])));
+                }
             }
         }
         

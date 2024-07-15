@@ -25,9 +25,9 @@ namespace scheduler
 
         private void addClassB_Click(object sender, EventArgs e)
         {
-            schedulerDataSetTableAdapters.classesTableAdapter cla =
-                new schedulerDataSetTableAdapters.classesTableAdapter();
-            cla.Insert(className.Text, classGroup.Text);
+            //schedulerDataSetTableAdapters.classesTableAdapter cla =
+                //new schedulerDataSetTableAdapters.classesTableAdapter();
+            //cla.Insert(className.Text, classGroup.Text);
             
             this.Close();
         }

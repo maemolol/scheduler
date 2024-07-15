@@ -103,5 +103,23 @@ namespace scheduler
             addClass addC = new addClass();
             addC.Show();
         }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'schedulerDataSet.teachers' table. You can move, or remove it, as needed.
+            this.teachersTableAdapter.Fill(this.schedulerDataSet.teachers);
+            // TODO: This line of code loads data into the 'schedulerDataSet.students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.schedulerDataSet.students);
+            // TODO: This line of code loads data into the 'schedulerDataSet.rooms' table. You can move, or remove it, as needed.
+            //this.roomsTableAdapter.Fill(this.schedulerDataSet.rooms);
+            // TODO: This line of code loads data into the 'schedulerDataSet.groups' table. You can move, or remove it, as needed.
+            //this.groupsTableAdapter.Fill(this.schedulerDataSet.groups);
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
