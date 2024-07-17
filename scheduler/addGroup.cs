@@ -21,7 +21,7 @@ namespace scheduler
             schedulerDataSetTableAdapters.groupsTableAdapter grp =
                 new schedulerDataSetTableAdapters.groupsTableAdapter();
 
-            grp.Insert((int) studentComboBox.SelectedValue, groupClasses.Text, (int) groupClassrooms.SelectedValue);
+            grp.Insert((int) studentComboBox.SelectedValue, groupName.Text, (int) groupClassrooms.SelectedValue, groupClasses.Text);
             this.Close();
         }
     }

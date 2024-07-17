@@ -111,7 +111,7 @@ namespace scheduler
             // TODO: This line of code loads data into the 'schedulerDataSet.students' table. You can move, or remove it, as needed.
             this.studentsTableAdapter.Fill(this.schedulerDataSet.students);
             // TODO: This line of code loads data into the 'schedulerDataSet.rooms' table. You can move, or remove it, as needed.
-            //this.roomsTableAdapter.Fill(this.schedulerDataSet.rooms);
+            this.roomsTableAdapter.Fill(this.schedulerDataSet.rooms);
             // TODO: This line of code loads data into the 'schedulerDataSet.groups' table. You can move, or remove it, as needed.
             //this.groupsTableAdapter.Fill(this.schedulerDataSet.groups);
 

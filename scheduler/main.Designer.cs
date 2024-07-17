@@ -426,7 +426,7 @@
             this.propertiesTab.Location = new System.Drawing.Point(4, 22);
             this.propertiesTab.Name = "propertiesTab";
             this.propertiesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.propertiesTab.Size = new System.Drawing.Size(163, 242);
+            this.propertiesTab.Size = new System.Drawing.Size(163, 239);
             this.propertiesTab.TabIndex = 1;
             this.propertiesTab.Text = "Properties";
             this.propertiesTab.UseVisualStyleBackColor = true;
@@ -547,7 +547,7 @@
             this.classroomTab.Location = new System.Drawing.Point(4, 22);
             this.classroomTab.Name = "classroomTab";
             this.classroomTab.Padding = new System.Windows.Forms.Padding(3);
-            this.classroomTab.Size = new System.Drawing.Size(402, 242);
+            this.classroomTab.Size = new System.Drawing.Size(402, 239);
             this.classroomTab.TabIndex = 1;
             this.classroomTab.Text = "Classrooms";
             this.classroomTab.UseVisualStyleBackColor = true;
@@ -588,7 +588,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.RowHeadersWidth = 47;
-            this.dataGridView2.Size = new System.Drawing.Size(396, 236);
+            this.dataGridView2.Size = new System.Drawing.Size(396, 233);
             this.dataGridView2.TabIndex = 0;
             // 
             // roomidDataGridViewTextBoxColumn
@@ -610,7 +610,7 @@
             this.studentsTab.Location = new System.Drawing.Point(4, 22);
             this.studentsTab.Name = "studentsTab";
             this.studentsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.studentsTab.Size = new System.Drawing.Size(402, 242);
+            this.studentsTab.Size = new System.Drawing.Size(402, 239);
             this.studentsTab.TabIndex = 2;
             this.studentsTab.Text = "Students";
             this.studentsTab.UseVisualStyleBackColor = true;
@@ -655,7 +655,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView3.RowHeadersWidth = 47;
-            this.dataGridView3.Size = new System.Drawing.Size(396, 236);
+            this.dataGridView3.Size = new System.Drawing.Size(396, 233);
             this.dataGridView3.TabIndex = 0;
             // 
             // studentidDataGridViewTextBoxColumn
@@ -709,7 +709,7 @@
             this.teachersTab.Location = new System.Drawing.Point(4, 22);
             this.teachersTab.Name = "teachersTab";
             this.teachersTab.Padding = new System.Windows.Forms.Padding(3);
-            this.teachersTab.Size = new System.Drawing.Size(402, 242);
+            this.teachersTab.Size = new System.Drawing.Size(402, 239);
             this.teachersTab.TabIndex = 3;
             this.teachersTab.Text = "Teachers";
             this.teachersTab.UseVisualStyleBackColor = true;
@@ -753,7 +753,7 @@
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView4.RowHeadersWidth = 47;
-            this.dataGridView4.Size = new System.Drawing.Size(396, 236);
+            this.dataGridView4.Size = new System.Drawing.Size(396, 233);
             this.dataGridView4.TabIndex = 0;
             // 
             // teacheridDataGridViewTextBoxColumn
@@ -799,7 +799,7 @@
             this.classesTab.Location = new System.Drawing.Point(4, 22);
             this.classesTab.Name = "classesTab";
             this.classesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.classesTab.Size = new System.Drawing.Size(402, 242);
+            this.classesTab.Size = new System.Drawing.Size(402, 239);
             this.classesTab.TabIndex = 4;
             this.classesTab.Text = "Classes";
             this.classesTab.UseVisualStyleBackColor = true;
@@ -841,7 +841,7 @@
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView5.RowHeadersWidth = 47;
-            this.dataGridView5.Size = new System.Drawing.Size(396, 236);
+            this.dataGridView5.Size = new System.Drawing.Size(396, 233);
             this.dataGridView5.TabIndex = 0;
             // 
             // classnameDataGridViewTextBoxColumn
