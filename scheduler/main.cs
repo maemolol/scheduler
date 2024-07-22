@@ -106,14 +106,11 @@ namespace scheduler
 
         private void main_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'schedulerDataSet.teachers' table. You can move, or remove it, as needed.
-            this.teachersTableAdapter.Fill(this.schedulerDataSet.teachers);
-            // TODO: This line of code loads data into the 'schedulerDataSet.students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.schedulerDataSet.students);
-            // TODO: This line of code loads data into the 'schedulerDataSet.rooms' table. You can move, or remove it, as needed.
-            this.roomsTableAdapter.Fill(this.schedulerDataSet.rooms);
-            // TODO: This line of code loads data into the 'schedulerDataSet.groups' table. You can move, or remove it, as needed.
-            //this.groupsTableAdapter.Fill(this.schedulerDataSet.groups);
+            // TODO: This line of code loads data into the 'schedulerDataSet.classes' table. You can move, or remove it, as needed.
+            this.classesTableAdapter.Fill(this.schedulerDataSet.classes);
+            // TODO: This line of code loads data into the 'schedulerDataSet.schedules' table. You can move, or remove it, as needed.
+            this.schedulesTableAdapter.Fill(this.schedulerDataSet.schedules);
+
 
         }
 

@@ -3,44 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\mark\\source\\repos\\scheduler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addclass.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addclass.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\schedulerdataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\schedulerdataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\main.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\about.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\about.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addclass.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addclass.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\about.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|c:\\users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{B4331432-32D3-4700-B682-A1388BE42902}|scheduler\\scheduler.csproj|solutionrelative:scheduler\\scheduler.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -106,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
@@ -116,7 +112,7 @@
               "RelativeDocumentMoniker": "scheduler\\main.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.cs",
               "RelativeToolTip": "scheduler\\main.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAawHEAAAAMAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAowG8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T09:05:17.083Z",
               "IsPinned": true,
@@ -124,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.cs",
               "RelativeDocumentMoniker": "scheduler\\main.cs",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "scheduler\\main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T12:08:36.935Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -144,37 +139,20 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "schedulerDataSet.cs",
-              "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\schedulerDataSet.cs",
-              "RelativeDocumentMoniker": "scheduler\\schedulerDataSet.cs",
-              "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\schedulerDataSet.cs",
-              "RelativeToolTip": "scheduler\\schedulerDataSet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:45:49.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "addClass.Designer.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addClass.Designer.cs",
               "RelativeDocumentMoniker": "scheduler\\addClass.Designer.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addClass.Designer.cs",
               "RelativeToolTip": "scheduler\\addClass.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswCYAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T13:54:27.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "addClass.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addClass.cs",
               "RelativeDocumentMoniker": "scheduler\\addClass.cs",
@@ -199,39 +177,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "addStudent.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addStudent.cs",
               "RelativeDocumentMoniker": "scheduler\\addStudent.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addStudent.cs",
               "RelativeToolTip": "scheduler\\addStudent.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABUAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T11:45:51.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T11:45:51.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "addGroup.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addGroup.cs",
               "RelativeDocumentMoniker": "scheduler\\addGroup.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addGroup.cs",
               "RelativeToolTip": "scheduler\\addGroup.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBcAAACDAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwBgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T08:20:00.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 1,
               "Title": "addRoom.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addRoom.cs",
               "RelativeDocumentMoniker": "scheduler\\addRoom.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addRoom.cs",
               "RelativeToolTip": "scheduler\\addRoom.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBgAAAAZAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T08:16:54.687Z",
               "EditorCaption": ""
@@ -251,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "scheduler.csproj",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.csproj",
               "RelativeDocumentMoniker": "scheduler\\scheduler.csproj",
@@ -263,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\Program.cs",
               "RelativeDocumentMoniker": "scheduler\\Program.cs",
@@ -287,29 +264,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "main.Designer.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.Designer.cs",
               "RelativeDocumentMoniker": "scheduler\\main.Designer.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.Designer.cs",
               "RelativeToolTip": "scheduler\\main.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "ViewState": "AQIAAB0EAAAAAAAAAAAwwC4EAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T06:59:05.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "addTeacher.cs",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addTeacher.cs",
               "RelativeDocumentMoniker": "scheduler\\addTeacher.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addTeacher.cs",
               "RelativeToolTip": "scheduler\\addTeacher.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAtwBQAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T08:39:19.551Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -324,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "about.resx",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\about.resx",
               "RelativeDocumentMoniker": "scheduler\\about.resx",
@@ -357,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "addStudent.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\Properties\\addStudent.cs",
               "RelativeDocumentMoniker": "scheduler\\Properties\\addStudent.cs",
@@ -368,31 +349,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "addGroup.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addGroup.cs",
               "RelativeDocumentMoniker": "scheduler\\addGroup.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addGroup.cs [Design]",
               "RelativeToolTip": "scheduler\\addGroup.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T13:25:06.667Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-17T13:25:06.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "addTeacher.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addTeacher.cs",
               "RelativeDocumentMoniker": "scheduler\\addTeacher.cs",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\addTeacher.cs [Design]",
               "RelativeToolTip": "scheduler\\addTeacher.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:20:24.082Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-17T07:20:24.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "addStudent.resx",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\Properties\\addStudent.resx",
               "RelativeDocumentMoniker": "scheduler\\Properties\\addStudent.resx",
@@ -403,15 +382,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "main.resx",
               "DocumentMoniker": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.resx",
               "RelativeDocumentMoniker": "scheduler\\main.resx",
               "ToolTip": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\main.resx",
               "RelativeToolTip": "scheduler\\main.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-10T15:44:07.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T15:44:07.041Z"
             }
           ]
         }

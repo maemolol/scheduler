@@ -1,4 +1,5 @@
-﻿using System;
+﻿using scheduler.schedulerDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,10 +19,10 @@ namespace scheduler
 
         private void button1_Click(object sender, EventArgs e)
         {
-            schedulerDataSetTableAdapters.groupsTableAdapter grp =
-                new schedulerDataSetTableAdapters.groupsTableAdapter();
+            schedulerDataSetTableAdapters.schedulesTableAdapter sch =
+                new schedulerDataSetTableAdapters.schedulesTableAdapter();
 
-            grp.Insert((int) studentComboBox.SelectedValue, groupName.Text, (int) groupClassrooms.SelectedValue, groupClasses.Text);
+            sch.Insert((int) studentComboBox.SelectedValue, groupName.Text, (int) groupClassrooms.SelectedValue, groupClasses.Text);
             this.Close();
         }
     }
