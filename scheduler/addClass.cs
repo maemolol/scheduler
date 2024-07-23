@@ -26,7 +26,7 @@ namespace scheduler
         {
             schedulerDataSetTableAdapters.classesTableAdapter cla =
                 new schedulerDataSetTableAdapters.classesTableAdapter();
-            cla.Insert(className.Text, classGroup.Text);
+            cla.Insert(className.Text, classType.Text, (int) teacherId.Value, studentsList.SelectedValue);
             
             this.Close();
         }

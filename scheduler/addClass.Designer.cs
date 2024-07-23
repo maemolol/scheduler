@@ -33,18 +33,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.className = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.addClassB = new System.Windows.Forms.Button();
-            this.classGroup = new System.Windows.Forms.ComboBox();
+            this.classType = new System.Windows.Forms.ComboBox();
             this.groupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schedulerDataSet = new scheduler.schedulerDataSet();
-            this.groupsTableAdapter = new scheduler.schedulerDataSetTableAdapters.schedulesTableAdapter();
+            this.addClassB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.studentsList = new System.Windows.Forms.ComboBox();
+            this.groupsTableAdapter = new scheduler.schedulerDataSetTableAdapters.schedulesTableAdapter();
+            this.teacherId = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherId)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -57,12 +58,12 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.className, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.classGroup, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.classType, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.addClassB, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.studentsList, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.teacherId, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -95,11 +96,30 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 7);
+            this.label2.Location = new System.Drawing.Point(189, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Class type:";
+            // 
+            // classType
+            // 
+            this.classType.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.groupsBindingSource, "groups", true));
+            this.classType.FormattingEnabled = true;
+            this.classType.Location = new System.Drawing.Point(253, 3);
+            this.classType.Name = "classType";
+            this.classType.Size = new System.Drawing.Size(121, 21);
+            this.classType.TabIndex = 5;
+            // 
+            // groupsBindingSource
+            // 
+            this.groupsBindingSource.DataMember = "groups";
+            this.groupsBindingSource.DataSource = this.schedulerDataSet;
+            // 
+            // schedulerDataSet
+            // 
+            this.schedulerDataSet.DataSetName = "schedulerDataSet";
+            this.schedulerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // addClassB
             // 
@@ -113,29 +133,6 @@
             this.addClassB.UseVisualStyleBackColor = true;
             this.addClassB.Click += new System.EventHandler(this.addClassB_Click);
             // 
-            // classGroup
-            // 
-            this.classGroup.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.groupsBindingSource, "groups", true));
-            this.classGroup.FormattingEnabled = true;
-            this.classGroup.Location = new System.Drawing.Point(250, 3);
-            this.classGroup.Name = "classGroup";
-            this.classGroup.Size = new System.Drawing.Size(121, 21);
-            this.classGroup.TabIndex = 5;
-            // 
-            // groupsBindingSource
-            // 
-            this.groupsBindingSource.DataMember = "groups";
-            this.groupsBindingSource.DataSource = this.schedulerDataSet;
-            // 
-            // schedulerDataSet
-            // 
-            this.schedulerDataSet.DataSetName = "schedulerDataSet";
-            this.schedulerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // groupsTableAdapter
-            // 
-            this.groupsTableAdapter.ClearBeforeFill = true;
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -147,31 +144,36 @@
             this.label3.Text = "Teacher\'s ID;";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(80, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(189, 34);
+            this.label4.Location = new System.Drawing.Point(192, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Students:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // studentsList
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(250, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
+            this.studentsList.FormattingEnabled = true;
+            this.studentsList.Location = new System.Drawing.Point(253, 30);
+            this.studentsList.Name = "studentsList";
+            this.studentsList.Size = new System.Drawing.Size(121, 21);
+            this.studentsList.TabIndex = 9;
+            // 
+            // groupsTableAdapter
+            // 
+            this.groupsTableAdapter.ClearBeforeFill = true;
+            // 
+            // teacherId
+            // 
+            this.teacherId.InterceptArrowKeys = false;
+            this.teacherId.Location = new System.Drawing.Point(80, 30);
+            this.teacherId.Name = "teacherId";
+            this.teacherId.Size = new System.Drawing.Size(103, 20);
+            this.teacherId.TabIndex = 10;
             // 
             // addClass
             // 
@@ -187,6 +189,7 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherId)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,10 +204,10 @@
         private schedulerDataSet schedulerDataSet;
         private System.Windows.Forms.BindingSource groupsBindingSource;
         private schedulerDataSetTableAdapters.schedulesTableAdapter groupsTableAdapter;
-        private System.Windows.Forms.ComboBox classGroup;
+        private System.Windows.Forms.ComboBox classType;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox studentsList;
+        private System.Windows.Forms.NumericUpDown teacherId;
     }
 }
