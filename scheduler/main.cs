@@ -52,7 +52,7 @@ namespace scheduler
 
         private void addGroupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addGroup addG = new addGroup();
+            addSchedule addG = new addSchedule();
             addG.Show();
         }
 
@@ -82,7 +82,7 @@ namespace scheduler
 
         private void addGroupLabel_Click(object sender, EventArgs e)
         {
-            addGroup addG = new addGroup();
+            addSchedule addG = new addSchedule();
             addG.Show();
         }
 

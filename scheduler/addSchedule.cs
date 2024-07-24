@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace scheduler
 {
-    public partial class addGroup : Form
+    public partial class addSchedule : Form
     {
-        public addGroup()
+        public addSchedule()
         {
             InitializeComponent();
         }
@@ -21,8 +21,13 @@ namespace scheduler
         {
             schedulerDataSetTableAdapters.schedulesTableAdapter sch =
                 new schedulerDataSetTableAdapters.schedulesTableAdapter();
+            sch.GetData();
+            schedulerDataSet.schedulesDataTable schTable;
+            schTable = sch.GetData();
+            int schedID = 0;
+            schedID = ((int)schTable.Select().Count<DataRow>()) + 1;
 
-            sch.Insert((int) studentComboBox.SelectedValue, groupName.Text, (int) groupClassrooms.SelectedValue, groupClasses.Text);
+            sch.Insert(schedID, (int) studentComboBox.SelectedValue, (int) roomId.Value, (int) groupClassrooms.SelectedValue, groupClasses.Text);
             this.Close();
         }
     }

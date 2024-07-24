@@ -34,16 +34,13 @@
             this.className = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.classType = new System.Windows.Forms.ComboBox();
-            this.groupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schedulerDataSet = new scheduler.schedulerDataSet();
             this.addClassB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.studentsList = new System.Windows.Forms.ComboBox();
-            this.groupsTableAdapter = new scheduler.schedulerDataSetTableAdapters.schedulesTableAdapter();
             this.teacherId = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherId)).BeginInit();
             this.SuspendLayout();
@@ -104,17 +101,11 @@
             // 
             // classType
             // 
-            this.classType.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.groupsBindingSource, "groups", true));
             this.classType.FormattingEnabled = true;
             this.classType.Location = new System.Drawing.Point(253, 3);
             this.classType.Name = "classType";
             this.classType.Size = new System.Drawing.Size(121, 21);
             this.classType.TabIndex = 5;
-            // 
-            // groupsBindingSource
-            // 
-            this.groupsBindingSource.DataMember = "groups";
-            this.groupsBindingSource.DataSource = this.schedulerDataSet;
             // 
             // schedulerDataSet
             // 
@@ -163,10 +154,6 @@
             this.studentsList.Size = new System.Drawing.Size(121, 21);
             this.studentsList.TabIndex = 9;
             // 
-            // groupsTableAdapter
-            // 
-            this.groupsTableAdapter.ClearBeforeFill = true;
-            // 
             // teacherId
             // 
             this.teacherId.InterceptArrowKeys = false;
@@ -187,7 +174,6 @@
             this.Load += new System.EventHandler(this.addClass_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherId)).EndInit();
             this.ResumeLayout(false);
@@ -202,8 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button addClassB;
         private schedulerDataSet schedulerDataSet;
-        private System.Windows.Forms.BindingSource groupsBindingSource;
-        private schedulerDataSetTableAdapters.schedulesTableAdapter groupsTableAdapter;
         private System.Windows.Forms.ComboBox classType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
