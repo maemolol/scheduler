@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.teacherNameTextBox = new System.Windows.Forms.TextBox();
+            this.teacherName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.teacherEmailTextBox = new System.Windows.Forms.TextBox();
+            this.teacherSpec = new System.Windows.Forms.TextBox();
             this.addTeacherButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.teacherAvailability = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,12 +47,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.teacherNameTextBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.teacherName, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.teacherEmailTextBox, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.teacherSpec, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.addTeacherButton, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.teacherAvailability, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -74,31 +74,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Teacher\'s name:";
             // 
-            // teacherNameTextBox
+            // teacherName
             // 
-            this.teacherNameTextBox.Location = new System.Drawing.Point(95, 3);
-            this.teacherNameTextBox.Name = "teacherNameTextBox";
-            this.teacherNameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.teacherNameTextBox.TabIndex = 1;
+            this.teacherName.Location = new System.Drawing.Point(95, 3);
+            this.teacherName.Name = "teacherName";
+            this.teacherName.Size = new System.Drawing.Size(100, 20);
+            this.teacherName.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
-            this.label4.Location = new System.Drawing.Point(114, 32);
+            this.label4.Location = new System.Drawing.Point(72, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.Size = new System.Drawing.Size(123, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Teacher\'s email";
+            this.label4.Text = "Teacher\'s specialisation:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // teacherEmailTextBox
+            // teacherSpec
             // 
-            this.teacherEmailTextBox.Location = new System.Drawing.Point(201, 29);
-            this.teacherEmailTextBox.Name = "teacherEmailTextBox";
-            this.teacherEmailTextBox.Size = new System.Drawing.Size(100, 20);
-            this.teacherEmailTextBox.TabIndex = 7;
+            this.teacherSpec.Location = new System.Drawing.Point(201, 29);
+            this.teacherSpec.Name = "teacherSpec";
+            this.teacherSpec.Size = new System.Drawing.Size(100, 20);
+            this.teacherSpec.TabIndex = 7;
             // 
             // addTeacherButton
             // 
@@ -122,14 +122,14 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Teacher\'s availability:";
             // 
-            // dateTimePicker1
+            // teacherAvailability
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(315, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(123, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.teacherAvailability.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.teacherAvailability.Location = new System.Drawing.Point(315, 3);
+            this.teacherAvailability.Name = "teacherAvailability";
+            this.teacherAvailability.ShowUpDown = true;
+            this.teacherAvailability.Size = new System.Drawing.Size(123, 20);
+            this.teacherAvailability.TabIndex = 10;
             // 
             // addTeacher
             // 
@@ -153,11 +153,11 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox teacherNameTextBox;
+        private System.Windows.Forms.TextBox teacherName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox teacherEmailTextBox;
+        private System.Windows.Forms.TextBox teacherSpec;
         private System.Windows.Forms.Button addTeacherButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker teacherAvailability;
     }
 }

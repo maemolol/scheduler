@@ -21,7 +21,13 @@ namespace scheduler
             schedulerDataSetTableAdapters.roomsTableAdapter room =
                 new schedulerDataSetTableAdapters.roomsTableAdapter();
 
-            room.Insert((int) roomNumberNumericUpDown.Value);
+            room.GetData();
+            schedulerDataSet.roomsDataTable roomTable;
+            roomTable = room.GetData();
+            int roomId = 0;
+            roomId = ((int) roomTable.Select().Count<DataRow>()) + 1;
+
+            room.Insert(roomId, roomName.Text, classType.Text, (int) capacity.Value, roomFeatures.SelectedText);
             this.Close();
         }
     }

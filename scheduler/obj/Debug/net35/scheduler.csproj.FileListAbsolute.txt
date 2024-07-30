@@ -31,8 +31,8 @@ C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.csproj.
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.exe
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.pdb
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addTeacher.resources
-C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addGroup.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.about.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addRoom.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addStudent.resources
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addClass.resources
+C:\Users\mark\source\repos\scheduler\scheduler\obj\Debug\net35\scheduler.addSchedule.resources

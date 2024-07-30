@@ -30,14 +30,14 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.addRoomButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roomName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.classType = new System.Windows.Forms.ComboBox();
+            this.addRoomButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.capacity = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.roomFeatures = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.capacity)).BeginInit();
             this.SuspendLayout();
@@ -50,14 +50,14 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.roomName, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.classType, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.addRoomButton, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.capacity, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.roomFeatures, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -79,6 +79,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Classroom name:";
             // 
+            // roomName
+            // 
+            this.roomName.Location = new System.Drawing.Point(96, 3);
+            this.roomName.Name = "roomName";
+            this.roomName.Size = new System.Drawing.Size(100, 20);
+            this.roomName.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(242, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Class type:";
+            // 
+            // classType
+            // 
+            this.classType.FormattingEnabled = true;
+            this.classType.Location = new System.Drawing.Point(327, 3);
+            this.classType.Name = "classType";
+            this.classType.Size = new System.Drawing.Size(100, 21);
+            this.classType.TabIndex = 5;
+            // 
             // addRoomButton
             // 
             this.addRoomButton.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -91,31 +116,6 @@
             this.addRoomButton.Text = "Add classroom";
             this.addRoomButton.UseVisualStyleBackColor = true;
             this.addRoomButton.Click += new System.EventHandler(this.addRoomButton_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(96, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Class type:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(327, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 5;
             // 
             // label3
             // 
@@ -144,12 +144,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Classroom features:";
             // 
-            // textBox2
+            // roomFeatures
             // 
-            this.textBox2.Location = new System.Drawing.Point(327, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.roomFeatures.Location = new System.Drawing.Point(327, 30);
+            this.roomFeatures.Name = "roomFeatures";
+            this.roomFeatures.Size = new System.Drawing.Size(100, 20);
+            this.roomFeatures.TabIndex = 9;
             // 
             // addRoom
             // 
@@ -174,12 +174,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addRoomButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox roomName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox classType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown capacity;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox roomFeatures;
     }
 }

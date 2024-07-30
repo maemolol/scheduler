@@ -21,7 +21,13 @@ namespace scheduler
             schedulerDataSetTableAdapters.teachersTableAdapter teach =
                 new schedulerDataSetTableAdapters.teachersTableAdapter();
 
-            teach.Insert((int) teacherIdNumericUpDown.Value, teacherNameTextBox.Text, teacherSurnameTextBox.Text, teacherEmailTextBox.Text);
+            teach.GetData();
+            schedulerDataSet.teachersDataTable teachTable;
+            teachTable = teach.GetData();
+            int teacherId = 0;
+            teacherId = ((int) teachTable.Select().Count<DataRow>()) + 1;
+
+            teach.Insert(teacherId, teacherName.Text, teacherAvailability.Value.TimeOfDay, teacherSpec.Text);
             this.Close();
         }
     }

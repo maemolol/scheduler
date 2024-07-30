@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.studentNameTextBox = new System.Windows.Forms.TextBox();
-            this.year = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.studentName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.studentYear = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.stGroup = new System.Windows.Forms.ComboBox();
+            this.studentGroup = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,12 +47,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.studentNameTextBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.studentName, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.year, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.studentYear, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.stGroup, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.studentGroup, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -66,33 +66,25 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(377, 85);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // studentNameTextBox
+            // label1
             // 
-            this.studentNameTextBox.Location = new System.Drawing.Point(89, 2);
-            this.studentNameTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.studentNameTextBox.Name = "studentNameTextBox";
-            this.studentNameTextBox.Size = new System.Drawing.Size(87, 20);
-            this.studentNameTextBox.TabIndex = 1;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student\'s name:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // year
+            // studentName
             // 
-            this.year.FormattingEnabled = true;
-            this.year.Location = new System.Drawing.Point(266, 2);
-            this.year.Margin = new System.Windows.Forms.Padding(2);
-            this.year.Name = "year";
-            this.year.Size = new System.Drawing.Size(103, 21);
-            this.year.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(182, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Student\'s year:";
+            this.studentName.Location = new System.Drawing.Point(89, 2);
+            this.studentName.Margin = new System.Windows.Forms.Padding(2);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(87, 20);
+            this.studentName.TabIndex = 1;
             // 
             // button1
             // 
@@ -108,17 +100,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // label3
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student\'s name:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(182, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Student\'s year:";
+            // 
+            // studentYear
+            // 
+            this.studentYear.FormattingEnabled = true;
+            this.studentYear.Location = new System.Drawing.Point(266, 2);
+            this.studentYear.Margin = new System.Windows.Forms.Padding(2);
+            this.studentYear.Name = "studentYear";
+            this.studentYear.Size = new System.Drawing.Size(103, 21);
+            this.studentYear.TabIndex = 4;
             // 
             // label2
             // 
@@ -131,13 +131,13 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Student\'s group:";
             // 
-            // stGroup
+            // studentGroup
             // 
-            this.stGroup.FormattingEnabled = true;
-            this.stGroup.Location = new System.Drawing.Point(181, 28);
-            this.stGroup.Name = "stGroup";
-            this.stGroup.Size = new System.Drawing.Size(80, 21);
-            this.stGroup.TabIndex = 10;
+            this.studentGroup.FormattingEnabled = true;
+            this.studentGroup.Location = new System.Drawing.Point(181, 28);
+            this.studentGroup.Name = "studentGroup";
+            this.studentGroup.Size = new System.Drawing.Size(80, 21);
+            this.studentGroup.TabIndex = 10;
             // 
             // addStudent
             // 
@@ -159,12 +159,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox studentNameTextBox;
-        private System.Windows.Forms.ComboBox year;
+        private System.Windows.Forms.TextBox studentName;
+        private System.Windows.Forms.ComboBox studentYear;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox stGroup;
+        private System.Windows.Forms.ComboBox studentGroup;
     }
 }

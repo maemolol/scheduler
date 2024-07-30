@@ -33,7 +33,7 @@
             this.studentComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupClassrooms = new System.Windows.Forms.ComboBox();
+            this.teacherId = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.roomId = new System.Windows.Forms.NumericUpDown();
@@ -55,7 +55,7 @@
             this.tableLayoutPanel1.Controls.Add(this.studentComboBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.groupClassrooms, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.teacherId, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.roomId, 3, 0);
@@ -114,13 +114,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Teacher ID:";
             // 
-            // groupClassrooms
+            // teacherId
             // 
-            this.groupClassrooms.FormattingEnabled = true;
-            this.groupClassrooms.Location = new System.Drawing.Point(119, 30);
-            this.groupClassrooms.Name = "groupClassrooms";
-            this.groupClassrooms.Size = new System.Drawing.Size(121, 21);
-            this.groupClassrooms.TabIndex = 5;
+            this.teacherId.FormattingEnabled = true;
+            this.teacherId.Location = new System.Drawing.Point(119, 30);
+            this.teacherId.Name = "teacherId";
+            this.teacherId.Size = new System.Drawing.Size(121, 21);
+            this.teacherId.TabIndex = 5;
             // 
             // label4
             // 
@@ -205,7 +205,7 @@
         private System.Windows.Forms.ComboBox studentComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox groupClassrooms;
+        private System.Windows.Forms.ComboBox teacherId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown roomId;
