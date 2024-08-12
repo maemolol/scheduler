@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace scheduler
+namespace scheduler.main
 {
     public partial class addTeacher : Form
     {

@@ -1,0 +1,2 @@
+C:\Users\mark\source\repos\scheduler\scheduler.algo\obj\Release\scheduler.algo.csproj.AssemblyReference.cache
+C:\Users\mark\source\repos\scheduler\scheduler.algo\obj\Release\scheduler.algo.csproj.CoreCompileInputs.cache

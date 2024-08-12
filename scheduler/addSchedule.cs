@@ -1,4 +1,4 @@
-﻿using scheduler.schedulerDataSetTableAdapters;
+﻿using scheduler.main.schedulerDataSetTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace scheduler
+namespace scheduler.main
 {
     public partial class addSchedule : Form
     {

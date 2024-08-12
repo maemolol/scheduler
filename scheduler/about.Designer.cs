@@ -1,4 +1,4 @@
-﻿namespace scheduler
+﻿namespace scheduler.main
 {
     partial class about
     {

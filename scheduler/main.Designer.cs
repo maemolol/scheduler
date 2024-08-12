@@ -1,4 +1,4 @@
-﻿namespace scheduler
+﻿namespace scheduler.main
 {
     partial class main
     {
@@ -78,14 +78,44 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.schedulesTab = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.starttimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schedulesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.schedulerDataSet = new scheduler.main.schedulerDataSet();
             this.classroomTab = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.featuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.studentsTab = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.teachersTab = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.specialisationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teachersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.classesTab = new System.Windows.Forms.TabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.requiredroomtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentgroupidsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.roomsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.studentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.teachersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -94,41 +124,12 @@
             this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.teachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.classesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.schedulesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.schedulerDataSet = new scheduler.schedulerDataSet();
-            this.roomsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.teachersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.requiredroomtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentgroupidsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.roomsTableAdapter = new scheduler.schedulerDataSetTableAdapters.roomsTableAdapter();
-            this.studentsTableAdapter = new scheduler.schedulerDataSetTableAdapters.studentsTableAdapter();
-            this.teachersTableAdapter = new scheduler.schedulerDataSetTableAdapters.teachersTableAdapter();
-            this.schedulesTableAdapter = new scheduler.schedulerDataSetTableAdapters.schedulesTableAdapter();
-            this.classesTableAdapter = new scheduler.schedulerDataSetTableAdapters.classesTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.starttimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.featuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialisationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomsTableAdapter = new scheduler.main.schedulerDataSetTableAdapters.roomsTableAdapter();
+            this.studentsTableAdapter = new scheduler.main.schedulerDataSetTableAdapters.studentsTableAdapter();
+            this.teachersTableAdapter = new scheduler.main.schedulerDataSetTableAdapters.teachersTableAdapter();
+            this.schedulesTableAdapter = new scheduler.main.schedulerDataSetTableAdapters.schedulesTableAdapter();
+            this.classesTableAdapter = new scheduler.main.schedulerDataSetTableAdapters.classesTableAdapter();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -137,14 +138,20 @@
             this.tabControl2.SuspendLayout();
             this.schedulesTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).BeginInit();
             this.classroomTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource2)).BeginInit();
             this.studentsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).BeginInit();
             this.teachersTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource2)).BeginInit();
             this.classesTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource1)).BeginInit();
@@ -153,12 +160,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -172,7 +173,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(602, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(602, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -185,7 +186,7 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 23);
             this.fileToolStripMenuItem.Text = " File";
             // 
             // openToolStripMenuItem
@@ -233,7 +234,7 @@
             this.addTeacherToolStripMenuItem,
             this.addStudentToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(46, 23);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // cutToolStripMenuItem
@@ -302,7 +303,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 23);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
@@ -329,12 +330,12 @@
             this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tabControl2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(602, 277);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(602, 280);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tabControl1
@@ -346,7 +347,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tableLayoutPanel1.SetRowSpan(this.tabControl1, 2);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(171, 265);
+            this.tabControl1.Size = new System.Drawing.Size(171, 268);
             this.tabControl1.TabIndex = 0;
             // 
             // fuctionsTab
@@ -355,7 +356,7 @@
             this.fuctionsTab.Location = new System.Drawing.Point(4, 22);
             this.fuctionsTab.Name = "fuctionsTab";
             this.fuctionsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.fuctionsTab.Size = new System.Drawing.Size(163, 239);
+            this.fuctionsTab.Size = new System.Drawing.Size(163, 242);
             this.fuctionsTab.TabIndex = 0;
             this.fuctionsTab.Text = "Functions";
             this.fuctionsTab.UseVisualStyleBackColor = true;
@@ -379,7 +380,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(157, 233);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(157, 236);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // addStudentLabel
@@ -451,7 +452,7 @@
             this.propertiesTab.Location = new System.Drawing.Point(4, 22);
             this.propertiesTab.Name = "propertiesTab";
             this.propertiesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.propertiesTab.Size = new System.Drawing.Size(163, 242);
+            this.propertiesTab.Size = new System.Drawing.Size(163, 239);
             this.propertiesTab.TabIndex = 1;
             this.propertiesTab.Text = "Properties";
             this.propertiesTab.UseVisualStyleBackColor = true;
@@ -468,7 +469,7 @@
             this.tabControl2.Name = "tabControl2";
             this.tableLayoutPanel1.SetRowSpan(this.tabControl2, 2);
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(410, 265);
+            this.tabControl2.Size = new System.Drawing.Size(410, 268);
             this.tabControl2.TabIndex = 1;
             // 
             // schedulesTab
@@ -477,7 +478,7 @@
             this.schedulesTab.Location = new System.Drawing.Point(4, 22);
             this.schedulesTab.Name = "schedulesTab";
             this.schedulesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.schedulesTab.Size = new System.Drawing.Size(402, 239);
+            this.schedulesTab.Size = new System.Drawing.Size(402, 242);
             this.schedulesTab.TabIndex = 0;
             this.schedulesTab.Text = "Schedules";
             this.schedulesTab.UseVisualStyleBackColor = true;
@@ -523,8 +524,66 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 47;
-            this.dataGridView1.Size = new System.Drawing.Size(396, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(396, 236);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Schedule ID";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // classidDataGridViewTextBoxColumn
+            // 
+            this.classidDataGridViewTextBoxColumn.DataPropertyName = "class_id";
+            this.classidDataGridViewTextBoxColumn.HeaderText = "Class ID";
+            this.classidDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.classidDataGridViewTextBoxColumn.Name = "classidDataGridViewTextBoxColumn";
+            this.classidDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "room_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Room ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 115;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "teacher_id";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Teacher ID";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 115;
+            // 
+            // starttimeDataGridViewTextBoxColumn
+            // 
+            this.starttimeDataGridViewTextBoxColumn.DataPropertyName = "start_time";
+            this.starttimeDataGridViewTextBoxColumn.HeaderText = "Start time";
+            this.starttimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.starttimeDataGridViewTextBoxColumn.Name = "starttimeDataGridViewTextBoxColumn";
+            this.starttimeDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // endtimeDataGridViewTextBoxColumn
+            // 
+            this.endtimeDataGridViewTextBoxColumn.DataPropertyName = "end_time";
+            this.endtimeDataGridViewTextBoxColumn.HeaderText = "End time";
+            this.endtimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.endtimeDataGridViewTextBoxColumn.Name = "endtimeDataGridViewTextBoxColumn";
+            this.endtimeDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // schedulesBindingSource
+            // 
+            this.schedulesBindingSource.DataMember = "schedules";
+            this.schedulesBindingSource.DataSource = this.schedulerDataSet;
+            // 
+            // schedulerDataSet
+            // 
+            this.schedulerDataSet.DataSetName = "schedulerDataSet";
+            this.schedulerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // classroomTab
             // 
@@ -580,6 +639,51 @@
             this.dataGridView2.Size = new System.Drawing.Size(396, 233);
             this.dataGridView2.TabIndex = 0;
             // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Classroom ID";
+            this.idDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.Width = 115;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            this.typeDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // capacityDataGridViewTextBoxColumn
+            // 
+            this.capacityDataGridViewTextBoxColumn.DataPropertyName = "capacity";
+            this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
+            this.capacityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
+            this.capacityDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // featuresDataGridViewTextBoxColumn
+            // 
+            this.featuresDataGridViewTextBoxColumn.DataPropertyName = "features";
+            this.featuresDataGridViewTextBoxColumn.HeaderText = "Features";
+            this.featuresDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.featuresDataGridViewTextBoxColumn.Name = "featuresDataGridViewTextBoxColumn";
+            this.featuresDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // roomsBindingSource2
+            // 
+            this.roomsBindingSource2.DataMember = "rooms";
+            this.roomsBindingSource2.DataSource = this.schedulerDataSet;
+            // 
             // studentsTab
             // 
             this.studentsTab.Controls.Add(this.dataGridView3);
@@ -632,6 +736,43 @@
             this.dataGridView3.RowHeadersWidth = 47;
             this.dataGridView3.Size = new System.Drawing.Size(396, 233);
             this.dataGridView3.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Student ID";
+            this.idDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.Width = 115;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.Width = 115;
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
+            this.yearDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            this.yearDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "group";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Group";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 115;
+            // 
+            // studentsBindingSource2
+            // 
+            this.studentsBindingSource2.DataMember = "students";
+            this.studentsBindingSource2.DataSource = this.schedulerDataSet;
             // 
             // teachersTab
             // 
@@ -686,6 +827,43 @@
             this.dataGridView4.Size = new System.Drawing.Size(396, 233);
             this.dataGridView4.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "teacher_id";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Teacher ID";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 115;
+            // 
+            // nameDataGridViewTextBoxColumn2
+            // 
+            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
+            this.nameDataGridViewTextBoxColumn2.Width = 115;
+            // 
+            // availabilityDataGridViewTextBoxColumn
+            // 
+            this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "availability";
+            this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
+            this.availabilityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
+            this.availabilityDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // specialisationDataGridViewTextBoxColumn
+            // 
+            this.specialisationDataGridViewTextBoxColumn.DataPropertyName = "specialisation";
+            this.specialisationDataGridViewTextBoxColumn.HeaderText = "Specialisation";
+            this.specialisationDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.specialisationDataGridViewTextBoxColumn.Name = "specialisationDataGridViewTextBoxColumn";
+            this.specialisationDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // teachersBindingSource2
+            // 
+            this.teachersBindingSource2.DataMember = "teachers";
+            this.teachersBindingSource2.DataSource = this.schedulerDataSet;
+            // 
             // classesTab
             // 
             this.classesTab.Controls.Add(this.dataGridView5);
@@ -739,31 +917,6 @@
             this.dataGridView5.RowHeadersWidth = 47;
             this.dataGridView5.Size = new System.Drawing.Size(396, 233);
             this.dataGridView5.TabIndex = 0;
-            // 
-            // schedulesBindingSource
-            // 
-            this.schedulesBindingSource.DataMember = "schedules";
-            this.schedulesBindingSource.DataSource = this.schedulerDataSet;
-            // 
-            // schedulerDataSet
-            // 
-            this.schedulerDataSet.DataSetName = "schedulerDataSet";
-            this.schedulerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // roomsBindingSource2
-            // 
-            this.roomsBindingSource2.DataMember = "rooms";
-            this.roomsBindingSource2.DataSource = this.schedulerDataSet;
-            // 
-            // studentsBindingSource2
-            // 
-            this.studentsBindingSource2.DataMember = "students";
-            this.studentsBindingSource2.DataSource = this.schedulerDataSet;
-            // 
-            // teachersBindingSource2
-            // 
-            this.teachersBindingSource2.DataMember = "teachers";
-            this.teachersBindingSource2.DataSource = this.schedulerDataSet;
             // 
             // idDataGridViewTextBoxColumn3
             // 
@@ -830,157 +983,10 @@
             // 
             this.classesTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
+            // notifyIcon1
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Schedule ID";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // classidDataGridViewTextBoxColumn
-            // 
-            this.classidDataGridViewTextBoxColumn.DataPropertyName = "class_id";
-            this.classidDataGridViewTextBoxColumn.HeaderText = "Class ID";
-            this.classidDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.classidDataGridViewTextBoxColumn.Name = "classidDataGridViewTextBoxColumn";
-            this.classidDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "room_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Room ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 115;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "teacher_id";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Teacher ID";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 115;
-            // 
-            // starttimeDataGridViewTextBoxColumn
-            // 
-            this.starttimeDataGridViewTextBoxColumn.DataPropertyName = "start_time";
-            this.starttimeDataGridViewTextBoxColumn.HeaderText = "Start time";
-            this.starttimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.starttimeDataGridViewTextBoxColumn.Name = "starttimeDataGridViewTextBoxColumn";
-            this.starttimeDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // endtimeDataGridViewTextBoxColumn
-            // 
-            this.endtimeDataGridViewTextBoxColumn.DataPropertyName = "end_time";
-            this.endtimeDataGridViewTextBoxColumn.HeaderText = "End time";
-            this.endtimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.endtimeDataGridViewTextBoxColumn.Name = "endtimeDataGridViewTextBoxColumn";
-            this.endtimeDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Classroom ID";
-            this.idDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.Width = 115;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // typeDataGridViewTextBoxColumn
-            // 
-            this.typeDataGridViewTextBoxColumn.DataPropertyName = "type";
-            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
-            this.typeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            this.typeDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // capacityDataGridViewTextBoxColumn
-            // 
-            this.capacityDataGridViewTextBoxColumn.DataPropertyName = "capacity";
-            this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
-            this.capacityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
-            this.capacityDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // featuresDataGridViewTextBoxColumn
-            // 
-            this.featuresDataGridViewTextBoxColumn.DataPropertyName = "features";
-            this.featuresDataGridViewTextBoxColumn.HeaderText = "Features";
-            this.featuresDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.featuresDataGridViewTextBoxColumn.Name = "featuresDataGridViewTextBoxColumn";
-            this.featuresDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // idDataGridViewTextBoxColumn2
-            // 
-            this.idDataGridViewTextBoxColumn2.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn2.HeaderText = "Student ID";
-            this.idDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
-            this.idDataGridViewTextBoxColumn2.Width = 115;
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            this.nameDataGridViewTextBoxColumn1.Width = 115;
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
-            this.yearDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            this.yearDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "group";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Group";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 115;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "teacher_id";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Teacher ID";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 115;
-            // 
-            // nameDataGridViewTextBoxColumn2
-            // 
-            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
-            this.nameDataGridViewTextBoxColumn2.Width = 115;
-            // 
-            // availabilityDataGridViewTextBoxColumn
-            // 
-            this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "availability";
-            this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
-            this.availabilityDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // specialisationDataGridViewTextBoxColumn
-            // 
-            this.specialisationDataGridViewTextBoxColumn.DataPropertyName = "specialisation";
-            this.specialisationDataGridViewTextBoxColumn.HeaderText = "Specialisation";
-            this.specialisationDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.specialisationDataGridViewTextBoxColumn.Name = "specialisationDataGridViewTextBoxColumn";
-            this.specialisationDataGridViewTextBoxColumn.Width = 115;
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // main
             // 
@@ -1004,14 +1010,20 @@
             this.tabControl2.ResumeLayout(false);
             this.schedulesTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).EndInit();
             this.classroomTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource2)).EndInit();
             this.studentsTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).EndInit();
             this.teachersTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource2)).EndInit();
             this.classesTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource1)).EndInit();
@@ -1020,12 +1032,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teachersBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1118,5 +1124,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn availabilityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn specialisationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

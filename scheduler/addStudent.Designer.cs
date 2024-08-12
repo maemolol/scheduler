@@ -1,4 +1,4 @@
-﻿namespace scheduler.Properties
+﻿namespace scheduler.main
 {
     partial class addStudent
     {

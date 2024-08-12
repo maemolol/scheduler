@@ -1,4 +1,4 @@
-﻿namespace scheduler
+﻿namespace scheduler.main
 {
     partial class addClass
     {
@@ -34,7 +34,7 @@
             this.className = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.classType = new System.Windows.Forms.ComboBox();
-            this.schedulerDataSet = new scheduler.schedulerDataSet();
+            this.schedulerDataSet = new scheduler.main.schedulerDataSet();
             this.addClassB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();

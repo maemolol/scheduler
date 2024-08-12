@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace scheduler
+namespace scheduler.main
 {
     partial class about : Form
     {

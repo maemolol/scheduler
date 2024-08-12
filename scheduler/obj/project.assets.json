@@ -1,12 +1,97 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v3.5": {},
-    ".NETFramework,Version=v3.5/win7-x86": {}
+    ".NETFramework,Version=v3.5": {
+      "NetLegacySupport.Tuple/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/NetLegacySupport.Tuple.dll": {}
+        },
+        "runtime": {
+          "lib/net35/NetLegacySupport.Tuple.dll": {}
+        }
+      },
+      "ValueTupleBridge/0.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net35/ValueTupleBridge.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net35/ValueTupleBridge.dll": {
+            "related": ".pdb"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v3.5/win7-x86": {
+      "NetLegacySupport.Tuple/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/NetLegacySupport.Tuple.dll": {}
+        },
+        "runtime": {
+          "lib/net35/NetLegacySupport.Tuple.dll": {}
+        }
+      },
+      "ValueTupleBridge/0.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net35/ValueTupleBridge.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net35/ValueTupleBridge.dll": {
+            "related": ".pdb"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NetLegacySupport.Tuple/1.1.1": {
+      "sha512": "uNWiaVk5Zjz4IS/3/Vd7ISczV3f389dK29dHZ8rMkb88tryiMTTNqh4Zgl3bpSUe0RXYiilAZGoXqCjThaK+Bg==",
+      "type": "package",
+      "path": "netlegacysupport.tuple/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/NetLegacySupport.Tuple.dll",
+        "lib/net35/NetLegacySupport.Tuple.dll",
+        "lib/net40/NetLegacySupport.Tuple.dll",
+        "netlegacysupport.tuple.1.1.1.nupkg.sha512",
+        "netlegacysupport.tuple.nuspec"
+      ]
+    },
+    "ValueTupleBridge/0.1.5": {
+      "sha512": "bghUJCiMfDOhXvyy76FpVCpi/I8+w6ZOzVmG9Ud9oqYGUOliLudMCfsWuF3AOIch5g+yh4ytPXnLLQSMKt4l0Q==",
+      "type": "package",
+      "path": "valuetuplebridge/0.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/ValueTupleBridge.dll",
+        "lib/net35/ValueTupleBridge.pdb",
+        "lib/net45/ValueTupleBridge.dll",
+        "lib/net45/ValueTupleBridge.pdb",
+        "lib/net471/ValueTupleBridge.dll",
+        "lib/net471/ValueTupleBridge.pdb",
+        "lib/netstandard1.0/ValueTupleBridge.dll",
+        "lib/netstandard1.0/ValueTupleBridge.pdb",
+        "lib/netstandard2.0/ValueTupleBridge.dll",
+        "lib/netstandard2.0/ValueTupleBridge.pdb",
+        "valuetuplebridge.0.1.5.nupkg.sha512",
+        "valuetuplebridge.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v3.5": []
+    ".NETFramework,Version=v3.5": [
+      "NetLegacySupport.Tuple >= 1.1.1",
+      "ValueTupleBridge >= 0.1.5"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mark\\.nuget\\packages\\": {}
@@ -14,9 +99,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.csproj",
-      "projectName": "scheduler",
-      "projectPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.csproj",
+      "projectUniqueName": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.main.csproj",
+      "projectName": "scheduler.main",
+      "projectPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.main.csproj",
       "packagesPath": "C:\\Users\\mark\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\obj\\",
       "projectStyle": "PackageReference",
@@ -51,6 +136,16 @@
     "frameworks": {
       "net35": {
         "targetAlias": "net35",
+        "dependencies": {
+          "NetLegacySupport.Tuple": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "ValueTupleBridge": {
+            "target": "Package",
+            "version": "[0.1.5, )"
+          }
+        },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     },

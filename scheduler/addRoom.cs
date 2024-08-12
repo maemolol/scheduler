@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using scheduler.main.Properties;
 
-namespace scheduler
+namespace scheduler.main
 {
     public partial class addRoom : Form
     {

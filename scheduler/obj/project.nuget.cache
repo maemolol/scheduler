@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "z2g37ZbgXWs=",
+  "dgSpecHash": "LRCizkZlI/g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.main.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mark\\.nuget\\packages\\netlegacysupport.tuple\\1.1.1\\netlegacysupport.tuple.1.1.1.nupkg.sha512",
+    "C:\\Users\\mark\\.nuget\\packages\\valuetuplebridge\\0.1.5\\valuetuplebridge.0.1.5.nupkg.sha512"
+  ],
   "logs": []
 }
