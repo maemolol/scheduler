@@ -4,6 +4,21 @@
     "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.main.csproj": {}
   },
   "projects": {
+    "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj",
+        "projectName": "scheduler.algo",
+        "projectPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj",
+        "frameworks": {
+          "net35": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net35": {}
+      }
+    },
     "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler\\scheduler.main.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +42,11 @@
         "frameworks": {
           "net35": {
             "targetAlias": "net35",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj": {
+                "projectPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -54,7 +73,7 @@
               "version": "[0.1.5, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

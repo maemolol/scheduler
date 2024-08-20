@@ -23,6 +23,15 @@
             "related": ".pdb"
           }
         }
+      },
+      "scheduler.algo/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/scheduler.algo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/scheduler.algo.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v3.5/win7-x86": {
@@ -46,6 +55,15 @@
           "lib/net35/ValueTupleBridge.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "scheduler.algo/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/scheduler.algo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/scheduler.algo.dll": {}
         }
       }
     }
@@ -85,12 +103,18 @@
         "valuetuplebridge.0.1.5.nupkg.sha512",
         "valuetuplebridge.nuspec"
       ]
+    },
+    "scheduler.algo/1.0.0": {
+      "type": "project",
+      "path": "../scheduler.algo/scheduler.algo.csproj",
+      "msbuildProject": "../scheduler.algo/scheduler.algo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v3.5": [
       "NetLegacySupport.Tuple >= 1.1.1",
-      "ValueTupleBridge >= 0.1.5"
+      "ValueTupleBridge >= 0.1.5",
+      "scheduler.algo >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -119,7 +143,11 @@
       "frameworks": {
         "net35": {
           "targetAlias": "net35",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj": {
+              "projectPath": "C:\\Users\\mark\\source\\repos\\scheduler\\scheduler.algo\\scheduler.algo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -146,7 +174,7 @@
             "version": "[0.1.5, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

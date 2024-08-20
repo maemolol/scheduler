@@ -59,23 +59,20 @@ namespace scheduler.algo
 
     public class DatabaseContext
     {
-        private readonly string _connectionString = "Data Source=SLINKYFOX;" +
-                                                    "Initial Catalog=scheduler;" +
-                                                    "User id=schedacc;" +
-                                                    "Password=scheduleraccount;";
+        private readonly string conStr = "Server=SLINKYFOX;Database=scheduler;User Id=schedacc;Password=scheduleraccount";
 
         public DatabaseContext(string connectionString)
         {
-            _connectionString = connectionString;
+            conStr = connectionString;
         }
 
         public List<Class> GetClasses()
         {
             var classes = new List<Class>();
-            using (var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(conStr))
             {
                 connection.Open();
-                using (var command = new SqlCommand("SELECT * FROM Classes", connection))
+                using (var command = new SqlCommand("SELECT * FROM scheduler.classes", connection))
                 {
                     using (var reader = command.ExecuteReader())
                     {
@@ -107,10 +104,10 @@ namespace scheduler.algo
         public List<Room> GetRooms()
         {
             var rooms = new List<Room>();
-            using (var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(conStr))
             {
                 connection.Open();
-                using (var command = new SqlCommand("SELECT * FROM Rooms", connection))
+                using (var command = new SqlCommand("SELECT * FROM scheduler.rooms", connection))
                 {
                     using (var reader = command.ExecuteReader())
                     {
@@ -134,15 +131,19 @@ namespace scheduler.algo
         public List<Teacher> GetTeachers()
         {
             var teachers = new List<Teacher>();
-            using (var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(conStr))
             {
                 connection.Open();
-                using (var command = new SqlCommand("SELECT * FROM Teachers", connection))
+                using (var command = new SqlCommand("SELECT * FROM scheduler.teachers", connection))
                 {
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
+                            Console.WriteLine(reader.GetName(0));
+                            Console.WriteLine(reader.GetName(1));
+                            Console.WriteLine(reader.GetName(2));
+                            Console.WriteLine(reader.GetName(3));
                             var availability = new List<Tuple<DateTime, DateTime>>();
                             // Assuming availability is stored as a semicolon-separated list of start-end times
                             string[] timeSlots = reader["availability"].ToString().Split(';');
@@ -169,11 +170,11 @@ namespace scheduler.algo
 
         public void SaveSchedule(Schedule schedule)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(conStr))
             {
                 connection.Open();
                 using (var command = new SqlCommand(
-                    "INSERT INTO Schedules (ClassId, RoomId, TeacherId, StartTime, EndTime) VALUES (@ClassId, @RoomId, @TeacherId, @StartTime, @EndTime)", connection))
+                    "INSERT INTO scheduler.schedules (ClassId, RoomId, TeacherId, StartTime, EndTime) VALUES (@ClassId, @RoomId, @TeacherId, @StartTime, @EndTime)", connection))
                 {
                     command.Parameters.AddWithValue("@ClassId", schedule.ClassId);
                     command.Parameters.AddWithValue("@RoomId", schedule.RoomId);
@@ -374,7 +375,7 @@ namespace scheduler.algo
                 var availableRooms = new List<Room>();
                 foreach (var r in rooms)
                 {
-                    if (r.Type == schedule.ClassId)
+                    if (r.Id == schedule.ClassId)
                         availableRooms.Add(r);
                 }
 
@@ -412,7 +413,7 @@ namespace scheduler.algo
     {
         public static void Main(string[] args)
         {
-            string connectionString = "YourConnectionStringHere";
+            string connectionString = "Server=SLINKYFOX;Database=scheduler;User Id=schedacc;Password=scheduleraccount";
             var dbContext = new DatabaseContext(connectionString);
 
             var classes = dbContext.GetClasses();

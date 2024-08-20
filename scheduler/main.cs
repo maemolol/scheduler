@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using scheduler.algo;
 
 namespace scheduler.main
 {
@@ -110,13 +111,15 @@ namespace scheduler.main
             this.classesTableAdapter.Fill(this.schedulerDataSet.classes);
             // TODO: This line of code loads data into the 'schedulerDataSet.schedules' table. You can move, or remove it, as needed.
             this.schedulesTableAdapter.Fill(this.schedulerDataSet.schedules);
-
-
+            //algo.Program sched_algo = new algo.Program();
+            //sched_algo();
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        
     }
 }

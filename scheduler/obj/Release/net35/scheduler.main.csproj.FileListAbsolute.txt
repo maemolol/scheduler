@@ -21,3 +21,5 @@ C:\Users\mark\source\repos\scheduler\scheduler\obj\Release\net35\scheduler.main.
 C:\Users\mark\source\repos\scheduler\scheduler\obj\Release\net35\scheduler.main.pdb
 C:\Users\mark\source\repos\scheduler\scheduler\bin\Release\net35\NetLegacySupport.Tuple.dll
 C:\Users\mark\source\repos\scheduler\scheduler\bin\Release\net35\ValueTupleBridge.dll
+C:\Users\mark\source\repos\scheduler\scheduler\bin\Release\net35\scheduler.algo.exe
+C:\Users\mark\source\repos\scheduler\scheduler\bin\Release\net35\scheduler.algo.pdb

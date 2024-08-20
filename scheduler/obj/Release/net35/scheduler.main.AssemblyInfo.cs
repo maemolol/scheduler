@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("scheduler.main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7461fc569960885cc5ea51c2883b20f88712508b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24d854062f8f66c51c209b35751b0db1e4d8c243")]
 [assembly: System.Reflection.AssemblyProductAttribute("scheduler.main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("scheduler.main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
