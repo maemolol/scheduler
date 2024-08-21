@@ -29,7 +29,7 @@ namespace scheduler.main
             int studentId = 0;
             studentId = ((int) studTable.Select().Count<DataRow>()) + 1;
 
-            stud.Insert(studentId, studentName.Text, studentYear.SelectedText, studentGroup.SelectedText);
+            stud.Insert(studentId, studentName.Text, studentYear.Text, studentGroup.Text);
             this.Close();
         }
 

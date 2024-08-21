@@ -58,7 +58,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addClassroomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +70,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.addStudentLabel = new System.Windows.Forms.Label();
             this.addTeacherLabel = new System.Windows.Forms.Label();
-            this.addScheduleLabel = new System.Windows.Forms.Label();
             this.addClassroomLabel = new System.Windows.Forms.Label();
             this.addClassL = new System.Windows.Forms.Label();
             this.propertiesTab = new System.Windows.Forms.TabPage();
@@ -105,7 +103,6 @@
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialisationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teachersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.classesTab = new System.Windows.Forms.TabPage();
@@ -230,7 +227,6 @@
             this.toolStripSeparator2,
             this.addClassToolStripMenuItem,
             this.addClassroomToolStripMenuItem,
-            this.addScheduleToolStripMenuItem,
             this.addTeacherToolStripMenuItem,
             this.addStudentToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
@@ -241,60 +237,53 @@
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(173, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(203, 6);
             // 
             // addClassToolStripMenuItem
             // 
             this.addClassToolStripMenuItem.Name = "addClassToolStripMenuItem";
-            this.addClassToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.addClassToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.addClassToolStripMenuItem.Text = "Add class";
             this.addClassToolStripMenuItem.Click += new System.EventHandler(this.addClassToolStripMenuItem_Click);
             // 
             // addClassroomToolStripMenuItem
             // 
             this.addClassroomToolStripMenuItem.Name = "addClassroomToolStripMenuItem";
-            this.addClassroomToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.addClassroomToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.addClassroomToolStripMenuItem.Text = "Add classroom";
             this.addClassroomToolStripMenuItem.Click += new System.EventHandler(this.addClassroomToolStripMenuItem_Click);
-            // 
-            // addScheduleToolStripMenuItem
-            // 
-            this.addScheduleToolStripMenuItem.Name = "addScheduleToolStripMenuItem";
-            this.addScheduleToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
-            this.addScheduleToolStripMenuItem.Text = "Add schedule";
-            this.addScheduleToolStripMenuItem.Click += new System.EventHandler(this.addGroupToolStripMenuItem_Click);
             // 
             // addTeacherToolStripMenuItem
             // 
             this.addTeacherToolStripMenuItem.Name = "addTeacherToolStripMenuItem";
-            this.addTeacherToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.addTeacherToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.addTeacherToolStripMenuItem.Text = "Add teacher";
             this.addTeacherToolStripMenuItem.Click += new System.EventHandler(this.addTeacherToolStripMenuItem_Click);
             // 
             // addStudentToolStripMenuItem
             // 
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.addStudentToolStripMenuItem.Text = "Add student";
             this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
@@ -367,14 +356,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.addStudentLabel, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.addTeacherLabel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.addScheduleLabel, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.addClassroomLabel, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.addClassL, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.addClassroomLabel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.addClassL, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -409,26 +396,13 @@
             this.addTeacherLabel.Text = "Add teacher";
             this.addTeacherLabel.Click += new System.EventHandler(this.addTeacherLabel_Click);
             // 
-            // addScheduleLabel
-            // 
-            this.addScheduleLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.addScheduleLabel.AutoSize = true;
-            this.addScheduleLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addScheduleLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addScheduleLabel.Location = new System.Drawing.Point(3, 41);
-            this.addScheduleLabel.Name = "addScheduleLabel";
-            this.addScheduleLabel.Size = new System.Drawing.Size(91, 17);
-            this.addScheduleLabel.TabIndex = 2;
-            this.addScheduleLabel.Text = "Add schedule";
-            this.addScheduleLabel.Click += new System.EventHandler(this.addGroupLabel_Click);
-            // 
             // addClassroomLabel
             // 
             this.addClassroomLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.addClassroomLabel.AutoSize = true;
             this.addClassroomLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addClassroomLabel.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addClassroomLabel.Location = new System.Drawing.Point(3, 61);
+            this.addClassroomLabel.Location = new System.Drawing.Point(3, 41);
             this.addClassroomLabel.Name = "addClassroomLabel";
             this.addClassroomLabel.Size = new System.Drawing.Size(99, 17);
             this.addClassroomLabel.TabIndex = 3;
@@ -440,7 +414,7 @@
             this.addClassL.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.addClassL.AutoSize = true;
             this.addClassL.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addClassL.Location = new System.Drawing.Point(3, 81);
+            this.addClassL.Location = new System.Drawing.Point(3, 61);
             this.addClassL.Name = "addClassL";
             this.addClassL.Size = new System.Drawing.Size(66, 17);
             this.addClassL.TabIndex = 4;
@@ -452,7 +426,7 @@
             this.propertiesTab.Location = new System.Drawing.Point(4, 22);
             this.propertiesTab.Name = "propertiesTab";
             this.propertiesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.propertiesTab.Size = new System.Drawing.Size(163, 239);
+            this.propertiesTab.Size = new System.Drawing.Size(163, 242);
             this.propertiesTab.TabIndex = 1;
             this.propertiesTab.Text = "Properties";
             this.propertiesTab.UseVisualStyleBackColor = true;
@@ -513,6 +487,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -591,7 +566,7 @@
             this.classroomTab.Location = new System.Drawing.Point(4, 22);
             this.classroomTab.Name = "classroomTab";
             this.classroomTab.Padding = new System.Windows.Forms.Padding(3);
-            this.classroomTab.Size = new System.Drawing.Size(402, 239);
+            this.classroomTab.Size = new System.Drawing.Size(402, 242);
             this.classroomTab.TabIndex = 1;
             this.classroomTab.Text = "Classrooms";
             this.classroomTab.UseVisualStyleBackColor = true;
@@ -636,7 +611,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.RowHeadersWidth = 47;
-            this.dataGridView2.Size = new System.Drawing.Size(396, 233);
+            this.dataGridView2.Size = new System.Drawing.Size(396, 236);
             this.dataGridView2.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn1
@@ -690,7 +665,7 @@
             this.studentsTab.Location = new System.Drawing.Point(4, 22);
             this.studentsTab.Name = "studentsTab";
             this.studentsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.studentsTab.Size = new System.Drawing.Size(402, 239);
+            this.studentsTab.Size = new System.Drawing.Size(402, 242);
             this.studentsTab.TabIndex = 2;
             this.studentsTab.Text = "Students";
             this.studentsTab.UseVisualStyleBackColor = true;
@@ -734,7 +709,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView3.RowHeadersWidth = 47;
-            this.dataGridView3.Size = new System.Drawing.Size(396, 233);
+            this.dataGridView3.Size = new System.Drawing.Size(396, 236);
             this.dataGridView3.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn2
@@ -780,7 +755,7 @@
             this.teachersTab.Location = new System.Drawing.Point(4, 22);
             this.teachersTab.Name = "teachersTab";
             this.teachersTab.Padding = new System.Windows.Forms.Padding(3);
-            this.teachersTab.Size = new System.Drawing.Size(402, 239);
+            this.teachersTab.Size = new System.Drawing.Size(402, 242);
             this.teachersTab.TabIndex = 3;
             this.teachersTab.Text = "Teachers";
             this.teachersTab.UseVisualStyleBackColor = true;
@@ -801,7 +776,6 @@
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
             this.nameDataGridViewTextBoxColumn2,
-            this.availabilityDataGridViewTextBoxColumn,
             this.specialisationDataGridViewTextBoxColumn});
             this.dataGridView4.DataSource = this.teachersBindingSource2;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -824,7 +798,7 @@
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView4.RowHeadersWidth = 47;
-            this.dataGridView4.Size = new System.Drawing.Size(396, 233);
+            this.dataGridView4.Size = new System.Drawing.Size(396, 236);
             this.dataGridView4.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn4
@@ -842,14 +816,6 @@
             this.nameDataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
             this.nameDataGridViewTextBoxColumn2.Width = 115;
-            // 
-            // availabilityDataGridViewTextBoxColumn
-            // 
-            this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "availability";
-            this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
-            this.availabilityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
-            this.availabilityDataGridViewTextBoxColumn.Width = 115;
             // 
             // specialisationDataGridViewTextBoxColumn
             // 
@@ -870,7 +836,7 @@
             this.classesTab.Location = new System.Drawing.Point(4, 22);
             this.classesTab.Name = "classesTab";
             this.classesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.classesTab.Size = new System.Drawing.Size(402, 239);
+            this.classesTab.Size = new System.Drawing.Size(402, 242);
             this.classesTab.TabIndex = 4;
             this.classesTab.Text = "Classes";
             this.classesTab.UseVisualStyleBackColor = true;
@@ -915,7 +881,7 @@
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView5.RowHeadersWidth = 47;
-            this.dataGridView5.Size = new System.Drawing.Size(396, 233);
+            this.dataGridView5.Size = new System.Drawing.Size(396, 236);
             this.dataGridView5.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn3
@@ -1055,7 +1021,6 @@
         private System.Windows.Forms.ToolStripMenuItem addClassToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem addClassroomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addScheduleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addTeacherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
@@ -1067,7 +1032,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label addStudentLabel;
         private System.Windows.Forms.Label addTeacherLabel;
-        private System.Windows.Forms.Label addScheduleLabel;
         private System.Windows.Forms.Label addClassroomLabel;
         private System.Windows.Forms.Label addClassL;
         private System.Windows.Forms.TabControl tabControl2;

@@ -1164,7 +1164,7 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public schedulesRow AddschedulesRow(int id, int class_id, int room_id, int teacher_id, System.TimeSpan start_time, System.TimeSpan end_time) {
+            public schedulesRow AddschedulesRow(int id, int class_id, int room_id, int teacher_id, System.DateTime start_time, System.DateTime end_time) {
                 schedulesRow rowschedulesRow = ((schedulesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
@@ -1214,9 +1214,9 @@ namespace scheduler.main {
                 base.Columns.Add(this.columnroom_id);
                 this.columnteacher_id = new global::System.Data.DataColumn("teacher_id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnteacher_id);
-                this.columnstart_time = new global::System.Data.DataColumn("start_time", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
+                this.columnstart_time = new global::System.Data.DataColumn("start_time", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstart_time);
-                this.columnend_time = new global::System.Data.DataColumn("end_time", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
+                this.columnend_time = new global::System.Data.DataColumn("end_time", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnend_time);
                 this.columnid.AllowDBNull = false;
             }
@@ -1662,7 +1662,9 @@ namespace scheduler.main {
             
             private global::System.Data.DataColumn columnname;
             
-            private global::System.Data.DataColumn columnavailability;
+            private global::System.Data.DataColumn columnstart_availability;
+            
+            private global::System.Data.DataColumn columnend_availability;
             
             private global::System.Data.DataColumn columnspecialisation;
             
@@ -1717,9 +1719,17 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn availabilityColumn {
+            public global::System.Data.DataColumn start_availabilityColumn {
                 get {
-                    return this.columnavailability;
+                    return this.columnstart_availability;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn end_availabilityColumn {
+                get {
+                    return this.columnend_availability;
                 }
             }
             
@@ -1768,12 +1778,13 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public teachersRow AddteachersRow(int teacher_id, string name, System.TimeSpan availability, string specialisation) {
+            public teachersRow AddteachersRow(int teacher_id, string name, System.DateTime start_availability, System.DateTime end_availability, string specialisation) {
                 teachersRow rowteachersRow = ((teachersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         teacher_id,
                         name,
-                        availability,
+                        start_availability,
+                        end_availability,
                         specialisation};
                 rowteachersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowteachersRow);
@@ -1799,7 +1810,8 @@ namespace scheduler.main {
             internal void InitVars() {
                 this.columnteacher_id = base.Columns["teacher_id"];
                 this.columnname = base.Columns["name"];
-                this.columnavailability = base.Columns["availability"];
+                this.columnstart_availability = base.Columns["start_availability"];
+                this.columnend_availability = base.Columns["end_availability"];
                 this.columnspecialisation = base.Columns["specialisation"];
             }
             
@@ -1810,14 +1822,17 @@ namespace scheduler.main {
                 base.Columns.Add(this.columnteacher_id);
                 this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnname);
-                this.columnavailability = new global::System.Data.DataColumn("availability", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnavailability);
+                this.columnstart_availability = new global::System.Data.DataColumn("start_availability", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstart_availability);
+                this.columnend_availability = new global::System.Data.DataColumn("end_availability", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnend_availability);
                 this.columnspecialisation = new global::System.Data.DataColumn("specialisation", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnspecialisation);
                 this.columnteacher_id.AllowDBNull = false;
                 this.columnname.AllowDBNull = false;
                 this.columnname.MaxLength = 1073741823;
-                this.columnavailability.AllowDBNull = false;
+                this.columnstart_availability.AllowDBNull = false;
+                this.columnend_availability.AllowDBNull = false;
                 this.columnspecialisation.AllowDBNull = false;
                 this.columnspecialisation.MaxLength = 1073741823;
             }
@@ -2263,10 +2278,10 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.TimeSpan start_time {
+            public System.DateTime start_time {
                 get {
                     try {
-                        return ((global::System.TimeSpan)(this[this.tableschedules.start_timeColumn]));
+                        return ((global::System.DateTime)(this[this.tableschedules.start_timeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'start_time\' in table \'schedules\' is DBNull.", e);
@@ -2279,10 +2294,10 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.TimeSpan end_time {
+            public System.DateTime end_time {
                 get {
                     try {
-                        return ((global::System.TimeSpan)(this[this.tableschedules.end_timeColumn]));
+                        return ((global::System.DateTime)(this[this.tableschedules.end_timeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'end_time\' in table \'schedules\' is DBNull.", e);
@@ -2451,12 +2466,23 @@ namespace scheduler.main {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.TimeSpan availability {
+            public System.DateTime start_availability {
                 get {
-                    return ((global::System.TimeSpan)(this[this.tableteachers.availabilityColumn]));
+                    return ((global::System.DateTime)(this[this.tableteachers.start_availabilityColumn]));
                 }
                 set {
-                    this[this.tableteachers.availabilityColumn] = value;
+                    this[this.tableteachers.start_availabilityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime end_availability {
+                get {
+                    return ((global::System.DateTime)(this[this.tableteachers.end_availabilityColumn]));
+                }
+                set {
+                    this[this.tableteachers.end_availabilityColumn] = value;
                 }
             }
             
@@ -2790,7 +2816,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString;
+            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3047,7 +3073,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString;
+            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3298,15 +3324,15 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@class_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "class_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@room_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "room_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@teacher_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "teacher_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@start_time", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "start_time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@end_time", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "end_time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@start_time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "start_time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@end_time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "end_time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString;
+            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3377,7 +3403,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int id, global::System.Nullable<int> class_id, global::System.Nullable<int> room_id, global::System.Nullable<int> teacher_id, global::System.Nullable<global::System.TimeSpan> start_time, global::System.Nullable<global::System.TimeSpan> end_time) {
+        public virtual int Insert(int id, global::System.Nullable<int> class_id, global::System.Nullable<int> room_id, global::System.Nullable<int> teacher_id, global::System.Nullable<global::System.DateTime> start_time, global::System.Nullable<global::System.DateTime> end_time) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id));
             if ((class_id.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((int)(class_id.Value));
@@ -3398,13 +3424,13 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((start_time.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((System.TimeSpan)(start_time.Value));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(start_time.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             if ((end_time.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((System.TimeSpan)(end_time.Value));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(end_time.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
@@ -3584,7 +3610,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString;
+            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3885,17 +3911,20 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
             tableMapping.DataSetTable = "teachers";
             tableMapping.ColumnMappings.Add("teacher_id", "teacher_id");
             tableMapping.ColumnMappings.Add("name", "name");
-            tableMapping.ColumnMappings.Add("availability", "availability");
+            tableMapping.ColumnMappings.Add("start_availability", "start_availability");
+            tableMapping.ColumnMappings.Add("end_availability", "end_availability");
             tableMapping.ColumnMappings.Add("specialisation", "specialisation");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [scheduler].[teachers] ([teacher_id], [name], [availability], [specia" +
-                "lisation]) VALUES (@teacher_id, @name, @availability, @specialisation)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [scheduler].[teachers] ([teacher_id], [name], [start_availability], [" +
+                "end_availability], [specialisation]) VALUES (@teacher_id, @name, @start_availabi" +
+                "lity, @end_availability, @specialisation)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@teacher_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "teacher_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NText, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@availability", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "availability", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@start_availability", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "start_availability", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@end_availability", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "end_availability", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@specialisation", global::System.Data.SqlDbType.NText, 0, global::System.Data.ParameterDirection.Input, 0, 0, "specialisation", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -3903,7 +3932,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString;
+            this._connection.ConnectionString = global::scheduler.main.Properties.Settings.Default.schedulerConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3912,7 +3941,8 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT teacher_id, name, availability, specialisation FROM scheduler.teachers";
+            this._commandCollection[0].CommandText = "SELECT teacher_id, name, start_availability, end_availability, specialisation FRO" +
+                "M scheduler.teachers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3973,7 +4003,7 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int teacher_id, string name, System.TimeSpan availability, string specialisation) {
+        public virtual int Insert(int teacher_id, string name, System.DateTime start_availability, System.DateTime end_availability, string specialisation) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(teacher_id));
             if ((name == null)) {
                 throw new global::System.ArgumentNullException("name");
@@ -3981,12 +4011,13 @@ namespace scheduler.main.schedulerDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(name));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((System.TimeSpan)(availability));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(start_availability));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(end_availability));
             if ((specialisation == null)) {
                 throw new global::System.ArgumentNullException("specialisation");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(specialisation));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(specialisation));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

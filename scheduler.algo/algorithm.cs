@@ -140,19 +140,10 @@ namespace scheduler.algo
                     {
                         while (reader.Read())
                         {
-                            Console.WriteLine(reader.GetName(0));
-                            Console.WriteLine(reader.GetName(1));
-                            Console.WriteLine(reader.GetName(2));
-                            Console.WriteLine(reader.GetName(3));
+
                             var availability = new List<Tuple<DateTime, DateTime>>();
                             // Assuming availability is stored as a semicolon-separated list of start-end times
-                            string[] timeSlots = reader["availability"].ToString().Split(';');
-                            foreach (var slot in timeSlots)
-                            {
-                                string[] times = slot.Split('-');
-                                availability.Add(new Tuple<DateTime, DateTime>(
-                                    DateTime.Parse(times[0]), DateTime.Parse(times[1])));
-                            }
+                            availability.Add(new Tuple<DateTime, DateTime>((DateTime) reader["start_availability"], (DateTime) reader["start_availability"]));
 
                             teachers.Add(new Teacher
                             {
@@ -174,8 +165,25 @@ namespace scheduler.algo
             {
                 connection.Open();
                 using (var command = new SqlCommand(
-                    "INSERT INTO scheduler.schedules (ClassId, RoomId, TeacherId, StartTime, EndTime) VALUES (@ClassId, @RoomId, @TeacherId, @StartTime, @EndTime)", connection))
+                    "INSERT INTO scheduler.schedules (id, class_id, room_id, teacher_id, start_time, end_time) VALUES (@id, @ClassId, @RoomId, @TeacherId, @StartTime, @EndTime)", connection))
                 {
+                    int sched_id = 1;
+                    using (var id_command = new SqlCommand("SELECT id FROM scheduler.schedules", connection))
+                    {
+                        using (var reader = id_command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader["id"] == null)
+                                {
+                                    continue;
+                                } else {
+                                    sched_id = sched_id + (int)reader["id"];
+                                }
+                            }
+                        }
+                    }
+                    command.Parameters.AddWithValue("@id", sched_id);
                     command.Parameters.AddWithValue("@ClassId", schedule.ClassId);
                     command.Parameters.AddWithValue("@RoomId", schedule.RoomId);
                     command.Parameters.AddWithValue("@TeacherId", schedule.TeacherId);
@@ -341,7 +349,16 @@ namespace scheduler.algo
                     var offspring = Crossover(parent1, parent2, rand);
                     Mutate(offspring, rooms, teachers, rand);
                     offspring.Fitness = FitnessCalculator.CalculateFitness(offspring, rooms, teachers);
-                    newPopulation.Add(offspring);
+                    if (offspring != null && offspring.ClassSchedules.Count > 0)
+                    {
+                        newPopulation.Add(offspring);
+                    }
+                }
+
+                while(newPopulation.Count < PopulationSize)
+                {
+                    var extraChromosome = Population[newPopulation.Count % PopulationSize];
+                    newPopulation.Add(extraChromosome);
                 }
 
                 Population = newPopulation;
@@ -358,33 +375,42 @@ namespace scheduler.algo
             foreach (var schedule in parent1.ClassSchedules)
             {
                 if (rand.NextDouble() < 0.5)
+                {
                     offspring.ClassSchedules.Add(schedule);
+                }
                 else
-                    offspring.ClassSchedules.Add(parent2.ClassSchedules.Find(s => s.ClassId == schedule.ClassId));
+                {
+                    // Find the corresponding schedule in parent2
+                    var correspondingSchedule = parent2.ClassSchedules.Find(s => s.ClassId == schedule.ClassId);
+
+                    // If corresponding schedule is found, add it; otherwise, add the schedule from parent1
+                    if (correspondingSchedule != null)
+                    {
+                        offspring.ClassSchedules.Add(correspondingSchedule);
+                    }
+                    else
+                    {
+                        // You can either choose to add the schedule from parent1 or skip this step
+                        offspring.ClassSchedules.Add(schedule);
+                    }
+                }
             }
 
             return offspring;
         }
 
+
         private void Mutate(ScheduleChromosome chromosome, List<Room> rooms, List<Teacher> teachers, Random rand)
         {
             if (rand.NextDouble() < MutationRate)
             {
+                if (chromosome.ClassSchedules.Count == 0)
+                    return;
+
                 var schedule = chromosome.ClassSchedules[rand.Next(chromosome.ClassSchedules.Count)];
 
-                var availableRooms = new List<Room>();
-                foreach (var r in rooms)
-                {
-                    if (r.Id == schedule.ClassId)
-                        availableRooms.Add(r);
-                }
-
-                var availableTeachers = new List<Teacher>();
-                foreach (var t in teachers)
-                {
-                    if (t.Id == schedule.TeacherId)
-                        availableTeachers.Add(t);
-                }
+                var availableRooms = rooms.Where(r => r.Id == schedule.ClassId).ToList();
+                var availableTeachers = teachers.Where(t => t.Id == schedule.TeacherId).ToList();
 
                 if (availableRooms.Count > 0 && availableTeachers.Count > 0)
                 {
@@ -400,6 +426,7 @@ namespace scheduler.algo
                 }
             }
         }
+
 
         private DateTime GenerateRandomStartTime(List<Tuple<DateTime, DateTime>> availability, Random rand)
         {

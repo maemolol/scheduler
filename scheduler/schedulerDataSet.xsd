@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="schedulerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="schedulerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.scheduler.main.Properties.Settings.GlobalReference.Default.schedulerConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="schedulerConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="schedulerConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.scheduler.main.Properties.Settings.GlobalReference.Default.schedulerConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="classesTableAdapter" GeneratorDataComponentClassName="classesTableAdapter" Name="classes" UserDataComponentName="classesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="schedulerConnectionString (Settings)" DbObjectName="scheduler.scheduler.classes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="schedulerConnectionString1 (Settings)" DbObjectName="scheduler.scheduler.classes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [scheduler].[classes] ([id], [name], [required_room_type], [teacher_id], [student_group_ids]) VALUES (@id, @name, @required_room_type, @teacher_id, @student_group_ids)</CommandText>
@@ -41,7 +41,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="roomsTableAdapter" GeneratorDataComponentClassName="roomsTableAdapter" Name="rooms" UserDataComponentName="roomsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="schedulerConnectionString (Settings)" DbObjectName="scheduler.scheduler.rooms" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="schedulerConnectionString1 (Settings)" DbObjectName="scheduler.scheduler.rooms" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [scheduler].[rooms] ([id], [name], [type], [capacity], [features]) VALUES (@id, @name, @type, @capacity, @features)</CommandText>
@@ -73,7 +73,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="schedulesTableAdapter" GeneratorDataComponentClassName="schedulesTableAdapter" Name="schedules" UserDataComponentName="schedulesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="schedulerConnectionString (Settings)" DbObjectName="scheduler.scheduler.schedules" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="schedulerConnectionString1 (Settings)" DbObjectName="scheduler.scheduler.schedules" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [scheduler].[schedules] ([id], [class_id], [room_id], [teacher_id], [start_time], [end_time]) VALUES (@id, @class_id, @room_id, @teacher_id, @start_time, @end_time)</CommandText>
@@ -82,8 +82,8 @@
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@class_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="class_id" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@room_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="room_id" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@teacher_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="teacher_id" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Time" Direction="Input" ParameterName="@start_time" Precision="0" ProviderType="Time" Scale="0" Size="0" SourceColumn="start_time" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Time" Direction="Input" ParameterName="@end_time" Precision="0" ProviderType="Time" Scale="0" Size="0" SourceColumn="end_time" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@start_time" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="start_time" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@end_time" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="end_time" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
@@ -107,7 +107,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="studentsTableAdapter" GeneratorDataComponentClassName="studentsTableAdapter" Name="students" UserDataComponentName="studentsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="schedulerConnectionString (Settings)" DbObjectName="scheduler.scheduler.students" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="schedulerConnectionString1 (Settings)" DbObjectName="scheduler.scheduler.students" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [scheduler].[students] WHERE (([id] = @Original_id))</CommandText>
@@ -159,21 +159,22 @@ SELECT id, name, year, [group] FROM scheduler.students WHERE (id = @id)</Command
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="teachersTableAdapter" GeneratorDataComponentClassName="teachersTableAdapter" Name="teachers" UserDataComponentName="teachersTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="schedulerConnectionString (Settings)" DbObjectName="scheduler.scheduler.teachers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="schedulerConnectionString1 (Settings)" DbObjectName="scheduler.scheduler.teachers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [scheduler].[teachers] ([teacher_id], [name], [availability], [specialisation]) VALUES (@teacher_id, @name, @availability, @specialisation)</CommandText>
+                    <CommandText>INSERT INTO [scheduler].[teachers] ([teacher_id], [name], [start_availability], [end_availability], [specialisation]) VALUES (@teacher_id, @name, @start_availability, @end_availability, @specialisation)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@teacher_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="teacher_id" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@name" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="name" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Time" Direction="Input" ParameterName="@availability" Precision="0" ProviderType="Time" Scale="0" Size="0" SourceColumn="availability" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@start_availability" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="start_availability" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@end_availability" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="end_availability" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@specialisation" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="specialisation" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT teacher_id, name, availability, specialisation FROM scheduler.teachers</CommandText>
+                    <CommandText>SELECT teacher_id, name, start_availability, end_availability, specialisation FROM scheduler.teachers</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -182,7 +183,8 @@ SELECT id, name, year, [group] FROM scheduler.students WHERE (id = @id)</Command
             <Mappings>
               <Mapping SourceColumn="teacher_id" DataSetColumn="teacher_id" />
               <Mapping SourceColumn="name" DataSetColumn="name" />
-              <Mapping SourceColumn="availability" DataSetColumn="availability" />
+              <Mapping SourceColumn="start_availability" DataSetColumn="start_availability" />
+              <Mapping SourceColumn="end_availability" DataSetColumn="end_availability" />
               <Mapping SourceColumn="specialisation" DataSetColumn="specialisation" />
             </Mappings>
             <Sources />
@@ -254,8 +256,8 @@ SELECT id, name, year, [group] FROM scheduler.students WHERE (id = @id)</Command
               <xs:element name="class_id" msprop:Generator_ColumnPropNameInRow="class_id" msprop:Generator_ColumnPropNameInTable="class_idColumn" msprop:Generator_ColumnVarNameInTable="columnclass_id" msprop:Generator_UserColumnName="class_id" type="xs:int" minOccurs="0" />
               <xs:element name="room_id" msprop:Generator_ColumnPropNameInRow="room_id" msprop:Generator_ColumnPropNameInTable="room_idColumn" msprop:Generator_ColumnVarNameInTable="columnroom_id" msprop:Generator_UserColumnName="room_id" type="xs:int" minOccurs="0" />
               <xs:element name="teacher_id" msprop:Generator_ColumnPropNameInRow="teacher_id" msprop:Generator_ColumnPropNameInTable="teacher_idColumn" msprop:Generator_ColumnVarNameInTable="columnteacher_id" msprop:Generator_UserColumnName="teacher_id" type="xs:int" minOccurs="0" />
-              <xs:element name="start_time" msprop:Generator_ColumnPropNameInRow="start_time" msprop:Generator_ColumnPropNameInTable="start_timeColumn" msprop:Generator_ColumnVarNameInTable="columnstart_time" msprop:Generator_UserColumnName="start_time" type="xs:duration" minOccurs="0" />
-              <xs:element name="end_time" msprop:Generator_ColumnPropNameInRow="end_time" msprop:Generator_ColumnPropNameInTable="end_timeColumn" msprop:Generator_ColumnVarNameInTable="columnend_time" msprop:Generator_UserColumnName="end_time" type="xs:duration" minOccurs="0" />
+              <xs:element name="start_time" msprop:Generator_ColumnPropNameInRow="start_time" msprop:Generator_ColumnPropNameInTable="start_timeColumn" msprop:Generator_ColumnVarNameInTable="columnstart_time" msprop:Generator_UserColumnName="start_time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="end_time" msprop:Generator_ColumnPropNameInRow="end_time" msprop:Generator_ColumnPropNameInTable="end_timeColumn" msprop:Generator_ColumnVarNameInTable="columnend_time" msprop:Generator_UserColumnName="end_time" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -298,7 +300,8 @@ SELECT id, name, year, [group] FROM scheduler.students WHERE (id = @id)</Command
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="availability" msprop:Generator_ColumnPropNameInRow="availability" msprop:Generator_ColumnPropNameInTable="availabilityColumn" msprop:Generator_ColumnVarNameInTable="columnavailability" msprop:Generator_UserColumnName="availability" type="xs:duration" />
+              <xs:element name="start_availability" msprop:Generator_ColumnPropNameInRow="start_availability" msprop:Generator_ColumnPropNameInTable="start_availabilityColumn" msprop:Generator_ColumnVarNameInTable="columnstart_availability" msprop:Generator_UserColumnName="start_availability" type="xs:dateTime" />
+              <xs:element name="end_availability" msprop:Generator_ColumnPropNameInRow="end_availability" msprop:Generator_ColumnPropNameInTable="end_availabilityColumn" msprop:Generator_ColumnVarNameInTable="columnend_availability" msprop:Generator_UserColumnName="end_availability" type="xs:dateTime" />
               <xs:element name="specialisation" msprop:Generator_ColumnPropNameInRow="specialisation" msprop:Generator_ColumnPropNameInTable="specialisationColumn" msprop:Generator_ColumnVarNameInTable="columnspecialisation" msprop:Generator_UserColumnName="specialisation">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

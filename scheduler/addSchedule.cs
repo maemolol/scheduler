@@ -27,7 +27,7 @@ namespace scheduler.main
             int schedID = 0;
             schedID = ((int)schTable.Select().Count<DataRow>()) + 1;
 
-            sch.Insert(schedID, (int) studentComboBox.SelectedValue, (int) roomId.Value, (int) teacherId.SelectedValue, startTime.Value.TimeOfDay, endTime.Value.TimeOfDay);
+            sch.Insert(schedID, (int) studentComboBox.SelectedValue, (int) roomId.Value, (int) teacherId.SelectedValue, startTime.Value, endTime.Value);
             this.Close();
         }
     }

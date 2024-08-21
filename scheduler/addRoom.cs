@@ -28,7 +28,7 @@ namespace scheduler.main
             int roomId = 0;
             roomId = ((int) roomTable.Select().Count<DataRow>()) + 1;
 
-            room.Insert(roomId, roomName.Text, classType.Text, (int) capacity.Value, roomFeatures.SelectedText);
+            room.Insert(roomId, roomName.Text, classType.Text, (int) capacity.Value, roomFeatures.Text);
             this.Close();
         }
     }

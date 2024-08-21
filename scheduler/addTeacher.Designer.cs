@@ -35,7 +35,9 @@
             this.teacherSpec = new System.Windows.Forms.TextBox();
             this.addTeacherButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.teacherAvailability = new System.Windows.Forms.DateTimePicker();
+            this.startAvailability = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.endAvailability = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,11 +50,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.teacherName, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.teacherSpec, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.addTeacherButton, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.teacherAvailability, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.startAvailability, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.teacherSpec, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.endAvailability, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -68,7 +72,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Location = new System.Drawing.Point(6, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 0;
@@ -76,7 +80,7 @@
             // 
             // teacherName
             // 
-            this.teacherName.Location = new System.Drawing.Point(95, 3);
+            this.teacherName.Location = new System.Drawing.Point(101, 3);
             this.teacherName.Name = "teacherName";
             this.teacherName.Size = new System.Drawing.Size(100, 20);
             this.teacherName.TabIndex = 1;
@@ -85,8 +89,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
-            this.label4.Location = new System.Drawing.Point(72, 32);
+            this.label4.Location = new System.Drawing.Point(207, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 13);
             this.label4.TabIndex = 6;
@@ -95,7 +98,7 @@
             // 
             // teacherSpec
             // 
-            this.teacherSpec.Location = new System.Drawing.Point(201, 29);
+            this.teacherSpec.Location = new System.Drawing.Point(336, 29);
             this.teacherSpec.Name = "teacherSpec";
             this.teacherSpec.Size = new System.Drawing.Size(100, 20);
             this.teacherSpec.TabIndex = 7;
@@ -116,20 +119,39 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 6);
+            this.label2.Location = new System.Drawing.Point(221, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
+            this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Teacher\'s availability:";
+            this.label2.Text = "Start of availability:";
             // 
-            // teacherAvailability
+            // startAvailability
             // 
-            this.teacherAvailability.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.teacherAvailability.Location = new System.Drawing.Point(315, 3);
-            this.teacherAvailability.Name = "teacherAvailability";
-            this.teacherAvailability.ShowUpDown = true;
-            this.teacherAvailability.Size = new System.Drawing.Size(123, 20);
-            this.teacherAvailability.TabIndex = 10;
+            this.startAvailability.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.startAvailability.Location = new System.Drawing.Point(336, 3);
+            this.startAvailability.Name = "startAvailability";
+            this.startAvailability.ShowUpDown = true;
+            this.startAvailability.Size = new System.Drawing.Size(100, 20);
+            this.startAvailability.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "End of availability:";
+            // 
+            // endAvailability
+            // 
+            this.endAvailability.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.endAvailability.Location = new System.Drawing.Point(101, 29);
+            this.endAvailability.Name = "endAvailability";
+            this.endAvailability.ShowUpDown = true;
+            this.endAvailability.Size = new System.Drawing.Size(100, 20);
+            this.endAvailability.TabIndex = 12;
             // 
             // addTeacher
             // 
@@ -158,6 +180,8 @@
         private System.Windows.Forms.TextBox teacherSpec;
         private System.Windows.Forms.Button addTeacherButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker teacherAvailability;
+        private System.Windows.Forms.DateTimePicker startAvailability;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker endAvailability;
     }
 }

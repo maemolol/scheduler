@@ -27,7 +27,7 @@ namespace scheduler.main
             int teacherId = 0;
             teacherId = ((int) teachTable.Select().Count<DataRow>()) + 1;
 
-            teach.Insert(teacherId, teacherName.Text, teacherAvailability.Value.TimeOfDay, teacherSpec.Text);
+            teach.Insert(teacherId, teacherName.Text, startAvailability.Value, endAvailability.Value, teacherSpec.Text);
             this.Close();
         }
     }
