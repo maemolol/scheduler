@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using scheduler.algo;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace scheduler.main
 {
@@ -113,6 +114,28 @@ namespace scheduler.main
             this.schedulesTableAdapter.Fill(this.schedulerDataSet.schedules);
             //algo.Program sched_algo = new algo.Program();
             //sched_algo();
+            string deadline = DateTime.Now.ToString();
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+                // runs foreach loop if startdate and enddate are valid
+            {
+                DateTime startSchedule = (DateTime) dr.Cells["Start time"].Value;
+                DateTime endSchedule = (DateTime)dr.Cells["End time"].Value;
+                if (startSchedule <= endSchedule)// loops through rows of datagridview
+                {
+                    DateTime deadlineRow = Convert.ToDateTime(deadline); // converts deadline string to datetime and stores in deadlineRow variable
+
+                    if (startSchedule <= deadlineRow && deadlineRow <= endSchedule) // filters deadlines that are => startDate and <= endDate
+                    {
+                        dr.Visible = true; // display filtered rows here.
+                    }
+                    else
+                    {
+                        dr.Visible = false; // hide rows that are not beteen start and end date.
+                    }
+
+                }
+            }
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
